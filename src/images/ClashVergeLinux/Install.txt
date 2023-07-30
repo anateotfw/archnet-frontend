@@ -1,9 +1,0 @@
-Debian/Ubuntu :
-chmod +x ./clash-verge.xxx.deb
-sudo apt install ./clash-verge.xxx.deb
-
-arch :
-yay -S clash-verge-bin
-
-other distro:
-use appImage with sudo privilege
