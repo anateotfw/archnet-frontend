@@ -1,0 +1,19 @@
+.colorOfSteps{
+    color: #6d4aff;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.purpleBg{
+    background-color: #6d4aff;
+    border-radius: 10%;
+}
+.purpleText{
+    color: #6d4aff;
+}
+.imageOnApps{
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
