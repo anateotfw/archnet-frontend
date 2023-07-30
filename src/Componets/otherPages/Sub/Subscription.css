@@ -1,0 +1,85 @@
+
+.backGround{
+    background-size: contain;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+@media screen and (min-width: 1000px){
+    .mobileToast{
+        display: none;
+    }
+    .compToast{
+        display: block;
+    }
+}
+@media screen and (max-width: 1024px){
+
+    .backGround{
+        background-size: contain;
+        background-size: 100% 10%;
+        background-repeat: no-repeat;
+    }
+
+    .mobileToast{
+        display: block;;
+    }
+    .compToast{
+        display: none;
+    }
+    .checkSymbol:before {
+        content: "\2714\0020";
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    .mobileToast{
+        display: block;;
+    }
+    .compToast{
+        display: none;
+    }
+    .checkSymbol:before {
+        content: "\2714\0020";
+    }
+
+}
+
+@media screen and (max-width: 568px) {
+
+    .mobileToast {
+        display: block;;
+    }
+
+    .compToast {
+        display: none;
+    }
+
+
+
+
+    .checkSymbol:before {
+        content: "\2714\0020";
+    }
+}
+
+.checkSymbol:before {
+    content: "\2714\0020";
+}
+
+.chatCard {
+    background-color: #6d4aff;
+    color: #f7f5ff;
+
+}
