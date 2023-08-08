@@ -28,6 +28,7 @@ import V2rayForWindows from "../../Apps/Windows/V2rayForWindows";
 import ClashMetaForWindows from "../../Apps/Windows/ClashMetaForWindows";
 import ClashForMac from "../../Apps/Mac/ClashForMac";
 import NekorayForLinux from "../../Apps/Linux/NekorayForLinux";
+import streisand from "./../../../images/streisand2.png";
 const Learning=()=>{
     useEffect(()=>
     {
@@ -423,8 +424,24 @@ const Learning=()=>{
                                 <h2 className="mt-4 text-2xl font-bold text-black">FoXray</h2>
 
                                 <p className="mt-1 text-xl text-black" style={{direction: "rtl"}}>
-                                    برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه V2ray روی این آموزش کلیک کنید.
+                                    برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه FoXray روی این آموزش کلیک کنید.
                                 </p>
+                                </Link>
+                            </a>
+
+
+
+                            <a
+                                className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
+                            >
+                                <Link to="/StreisandForIos">
+                                    <img src={streisand} className="sizeOfIcon" alt="Streisand"/>
+
+                                    <h2 className="mt-4 text-2xl font-bold text-black">Streisand</h2>
+
+                                    <p className="mt-1 text-xl text-black" style={{direction: "rtl"}}>
+                                        برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه Streisand روی این آموزش کلیک کنید.
+                                    </p>
                                 </Link>
                             </a>
 
@@ -480,12 +497,12 @@ const Learning=()=>{
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <Link to="/ClashMetaForWindows">
-                                <img src={clashMeta} className="sizeOfIcon" alt="clashMeta"/>
+                                <img src={clashverge} className="sizeOfIcon" alt="clashMeta"/>
 
-                                <h2 className="mt-4 text-2xl font-bold text-white">clashMeta</h2>
+                                <h2 className="mt-4 text-2xl font-bold text-white">clashVerge</h2>
 
                                 <p className="mt-1 text-xl text-gray-300" style={{direction: "rtl"}}>
-                                    برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه clashMeta روی این آموزش کلیک کنید.
+                                    برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه clashVerge روی این آموزش کلیک کنید.
                                 </p>
                                 </Link>
                             </a>
@@ -549,12 +566,19 @@ const Learning=()=>{
                         <div className="mt-8  grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 GridOrdFlex">
 
 
+                            <a
+                                className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
+                            >
+                                <Link to="/StreisandForMac">
+                                    <img src={streisand} className="sizeOfIcon" alt="Streisand"/>
 
+                                    <h2 className="mt-4 text-2xl font-bold text-black">Streisand</h2>
 
-
-
-
-
+                                    <p className="mt-1 text-xl text-black" style={{direction: "rtl"}}>
+                                        برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه Streisand روی این آموزش کلیک کنید.
+                                    </p>
+                                </Link>
+                            </a>
 
 
                             <a

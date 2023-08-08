@@ -19,7 +19,7 @@ function ClashForAndroid(){
                     >
                         <div className="mt-12 text-center">
 
-                            <img src={clashAndroid} className="imageOnApps" alt="v2ray"/>
+
                             <h1> ClashMeta آموزش فعال سازی  <i className="text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-purple-300 ease-linear transition hover:hue-rotate-[90deg] duration-300" style={{fontStyle: "normal"}}> آرچ نت </i> با برنامه </h1>
                         </div>
                         <div className="mx-auto max-w-lg text-center">
@@ -127,7 +127,10 @@ function ClashForAndroid(){
                             </a>
                         </div>
 
+                        <div className="mt-12 text-center">
 
+                            <img src={clashAndroid} className="imageOnApps" alt="v2ray"/>
+                        </div>
                     </div>
                 </section>
             </section>

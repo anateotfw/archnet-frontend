@@ -21,6 +21,8 @@ import V2boxForMac from "./Componets/Apps/Mac/V2boxForMac";
 import ClashForMac from "./Componets/Apps/Mac/ClashForMac";
 import ClashForLinux from "./Componets/Apps/Linux/ClashForLinux";
 import NekorayForLinux from "./Componets/Apps/Linux/NekorayForLinux";
+import StreisandForIos from "./Componets/Apps/Ios/StreisandForIos";
+import StreisandForMac from "./Componets/Apps/Mac/StreisandForMac";
 
 function App() {
  return(
@@ -46,6 +48,8 @@ function App() {
     <Route path="ClashForMac" element={<ClashForMac/>}/>
     <Route path="ClashForLinux" element={<ClashForLinux/>}/>
     <Route path="NekorayForLinux" element={<NekorayForLinux/>}/>
+    <Route path="StreisandForIos" element={<StreisandForIos/>}/>
+    <Route path="StreisandForMac" element={<StreisandForMac/>}/>
 </Route>
 </Routes>
 </BrowserRouter>

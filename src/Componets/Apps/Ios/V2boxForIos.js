@@ -12,13 +12,13 @@ function V2boxForIos(){
     return(
         <>
             <section>
-                <section className="bg-gray-900 text-white">
+                <section className="text-black">
                     <div
                         className="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8"
                     >
                         <div className="mt-12 text-center">
 
-                            <img src={V2box} className="imageOnApps" alt="v2ray"/>
+
                             <h1> V2BOX آموزش فعال سازی  <i className="text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-purple-300 ease-linear transition hover:hue-rotate-[90deg] duration-300" style={{fontStyle: "normal"}}> آرچ نت </i> با برنامه </h1>
                         </div>
                         <div className="mx-auto max-w-lg text-center">
@@ -35,7 +35,7 @@ function V2boxForIos(){
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>دانلود برنامه</h2>
 
-                                <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
+                                <p className="mt-1 text-sm" style={{direction: "rtl"}}>
                                     ابتدا وارد پنل کاربری خود شوید و سپس از بخش نرم افزار ها قسمت IOS و سپس V2Box را انتخاب کرده و در آخر گزینه "دانلودV2box" را کلیک کنید.
                                 </p>
                             </a>
@@ -49,7 +49,7 @@ function V2boxForIos(){
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>ورود به برنامه</h2>
 
-                                <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
+                                <p className="mt-1 text-sm " style={{direction: "rtl"}}>
                                 پس از دانلود برنامه آن را اجرا کرده و در برنامه وارد قسمت Configs شوید. سپس نماد مشخص شده گوشه بالا سمت راست (+) را کلیک کنید.
                                 </p>
                             </a>
@@ -62,7 +62,7 @@ function V2boxForIos(){
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>بارگزاری </h2>
 
-                                <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
+                                <p className="mt-1 text-sm " style={{direction: "rtl"}}>
                              در این قسمت گزینه Add Subscription را کلیک کنید.
 
                                 </p>
@@ -89,7 +89,7 @@ function V2boxForIos(){
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>سرور ها</h2>
 
-                                <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
+                                <p className="mt-1 text-sm" style={{direction: "rtl"}}>
                                     پس از ثبت نام مشاهده میکنید که سرور ها برای شما در صفحه Configs نمایش داده خواهد شد.
                                     از بین سرور ها یکی از آن ها را انتخاب کنید.
                                     <br/>
@@ -105,7 +105,7 @@ function V2boxForIos(){
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>فعال سازی </h2>
 
-                                <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
+                                <p className="mt-1 text-sm" style={{direction: "rtl"}}>
                                    جهت فعال سازی به صفحه Home رفته و دکمه پایین صفحه Slide to connect را به سمت راست بکشید.
                                 </p>
                             </a>
@@ -118,14 +118,17 @@ function V2boxForIos(){
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>اتصال</h2>
 
-                                <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
+                                <p className="mt-1 text-sm" style={{direction: "rtl"}}>
                                   همانطور که مشاهده میکنید دکمه پایین صفحه به رنگ سبز و به حالت Tap To Disconnect در آمده است.
                                     شما به آرچ نت متصل شدید.
                                 </p>
                             </a>
                         </div>
 
+                        <div className="mt-12 text-center">
 
+                            <img src={V2box} className="imageOnApps" alt="v2ray"/>
+                        </div>
                     </div>
                 </section>
             </section>
