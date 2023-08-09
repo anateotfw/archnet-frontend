@@ -23,11 +23,13 @@ import ClashForLinux from "./Componets/Apps/Linux/ClashForLinux";
 import NekorayForLinux from "./Componets/Apps/Linux/NekorayForLinux";
 import StreisandForIos from "./Componets/Apps/Ios/StreisandForIos";
 import StreisandForMac from "./Componets/Apps/Mac/StreisandForMac";
+import ScrollFromTop from "./Componets/Main/ScrollFromTop";
 
 function App() {
  return(
   <>
 <BrowserRouter>
+    <ScrollFromTop>
 <Routes>
 <Route path="/" element={<MenuMain/>}>
 <Route index element={<Main/>}/>
@@ -52,6 +54,7 @@ function App() {
     <Route path="StreisandForMac" element={<StreisandForMac/>}/>
 </Route>
 </Routes>
+    </ScrollFromTop>
 </BrowserRouter>
   </>
  );

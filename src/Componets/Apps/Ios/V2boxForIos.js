@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import V2box from "../../../images/v2box.jpg";
 import step1V2boxIos from "../../../images/v2boxIOS/1.png";
 import step2V2boxIos from "../../../images/v2boxIOS/2.png";
@@ -7,10 +7,25 @@ import step4V2boxIos from "../../../images/v2boxIOS/4.png";
 import step5V2boxIos from "../../../images/v2boxIOS/5.png";
 import step6V2boxIos from "../../../images/v2boxIOS/6.png";
 import step7V2boxIos from "../../../images/v2boxIOS/7.png";
+import {gsap} from "gsap";
+import {ScrollTrigger} from "gsap/all";
 
 function V2boxForIos(){
+    useEffect(()=>
+    {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to("prograss", {
+            value: 100,
+            scrollTrigger: {
+                scrub: 0.5,
+            },
+        });
+    }, []);
+
+
     return(
         <>
+            <progress max={"100"} value={"0"}></progress>
             <section>
                 <section className="text-black">
                     <div
