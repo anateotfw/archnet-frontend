@@ -76,7 +76,7 @@ function V2boxForIos(){
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>بارگزاری Name, URL</h2>
 
-                                <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
+                                <p className="mt-1 text-sm " style={{direction: "rtl"}}>
                                     پنچره ای به این شکل برای شما باز خواهد شد، در قسمت Name، نام دلخواه و در قسمت URL لینک اتصال خود را که از قبل از پنل کاربری خود دانلود کرده اید بارگزاری کنید.
                                 </p>
                             </a>
