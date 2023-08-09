@@ -164,7 +164,7 @@ function ShadowForIos(){
                                 <a
                                     className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                                 >
-                                    <h1 className="colorOfSteps">4</h1>
+                                    <h1 className="colorOfSteps">5</h1>
                                     <img src={step5ShadowIosPart2}/>
 
                                     <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>سرور ها</h2>
