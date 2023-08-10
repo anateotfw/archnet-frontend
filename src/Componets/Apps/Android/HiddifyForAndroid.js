@@ -1,13 +1,13 @@
 import React from "react";
-import step1HiddifyAndroid from "../../../images/HiddifyNG/1.png";
-import step2HiddifyAndroid from "../../../images/HiddifyNG/2.png";
-import step3HiddifyAndroid from "../../../images/HiddifyNG/3.png";
-import step4HiddifyAndroid from "../../../images/HiddifyNG/4.png";
-import step5HiddifyAndroid from "../../../images/HiddifyNG/5.png";
-import step6HiddifyAndroid from "../../../images/HiddifyNG/6.png";
-import step7HiddifyAndroid from "../../../images/HiddifyNG/7.png";
+import step1HiddifyAndroid from "../../../images/HiddifyNG/1.webp";
+import step2HiddifyAndroid from "../../../images/HiddifyNG/2.webp";
+import step3HiddifyAndroid from "../../../images/HiddifyNG/3.webp";
+import step4HiddifyAndroid from "../../../images/HiddifyNG/4.webp";
+import step5HiddifyAndroid from "../../../images/HiddifyNG/5.webp";
+import step6HiddifyAndroid from "../../../images/HiddifyNG/6.webp";
+import step7HiddifyAndroid from "../../../images/HiddifyNG/7.webp";
 import "./Android.css";
-import HiddifyAndroid from "../../../images/hiddify.png";
+import HiddifyAndroid from "../../../images/hiddify.webp";
 function HiddifyForAndroid(){
     return(
         <>

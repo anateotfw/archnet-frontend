@@ -1,13 +1,13 @@
 import React from "react";
-import step1clashAndroid from "./../../../images/Clash-Meta/1.png";
-import step2clashAndroid from "./../../../images/Clash-Meta/2.png";
-import step3clashAndroid from "./../../../images/Clash-Meta/3.png";
-import step4clashAndroid from "./../../../images/Clash-Meta/4.png";
-import step5clashAndroid from "./../../../images/Clash-Meta/5.png";
-import step6clashAndroid from "./../../../images/Clash-Meta/6.png";
-import step7clashAndroid from "./../../../images/Clash-Meta/7.png";
+import step1clashAndroid from "./../../../images/Clash-Meta/1.webp";
+import step2clashAndroid from "./../../../images/Clash-Meta/2.webp";
+import step3clashAndroid from "./../../../images/Clash-Meta/3.webp";
+import step4clashAndroid from "./../../../images/Clash-Meta/4.webp";
+import step5clashAndroid from "./../../../images/Clash-Meta/5.webp";
+import step6clashAndroid from "./../../../images/Clash-Meta/6.webp";
+import step7clashAndroid from "./../../../images/Clash-Meta/7.webp";
 import "./Android.css";
-import clashAndroid from "../../../images/clashMeta.png";
+import clashAndroid from "../../../images/clashMeta.webp";
 function ClashForAndroid(){
     return(
         <>

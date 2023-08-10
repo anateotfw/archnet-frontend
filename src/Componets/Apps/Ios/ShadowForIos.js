@@ -1,16 +1,16 @@
 import React from "react";
-import step1ShadowIosPart1 from "../../../images/shadowrocket/part1/1.PNG";
-import step2ShadowIosPart1 from "../../../images/shadowrocket/part1/2.PNG";
-import step3ShadowIosPart1 from "../../../images/shadowrocket/part1/3.PNG";
-import step4ShadowIosPart1 from "../../../images/shadowrocket/part1/4.PNG";
+import step1ShadowIosPart1 from "../../../images/shadowrocket/part1/1.webp";
+import step2ShadowIosPart1 from "../../../images/shadowrocket/part1/2.webp";
+import step3ShadowIosPart1 from "../../../images/shadowrocket/part1/3.webp";
+import step4ShadowIosPart1 from "../../../images/shadowrocket/part1/4.webp";
 
-import step1ShadowIosPart2 from "../../../images/shadowrocket/part2/1.PNG";
-import step2ShadowIosPart2 from "../../../images/shadowrocket/part2/2-1.PNG";
-import step3ShadowIosPart2 from "../../../images/shadowrocket/part2/2.PNG";
-import step4ShadowIosPart2 from "../../../images/shadowrocket/part2/3.PNG";
-import step5ShadowIosPart2 from "../../../images/shadowrocket/part2/4.PNG";
-import step6ShadowIosPart2 from "../../../images/shadowrocket/part2/5.PNG";
-import ShadowRocket from "./../../../images/shadowrocket.png";
+import step1ShadowIosPart2 from "../../../images/shadowrocket/part2/1.webp";
+import step2ShadowIosPart2 from "../../../images/shadowrocket/part2/2-1.webp";
+import step3ShadowIosPart2 from "../../../images/shadowrocket/part2/2.webp";
+import step4ShadowIosPart2 from "../../../images/shadowrocket/part2/3.webp";
+import step5ShadowIosPart2 from "../../../images/shadowrocket/part2/4.webp";
+import step6ShadowIosPart2 from "../../../images/shadowrocket/part2/5.webp";
+import ShadowRocket from "./../../../images/shadowrocket.webp";
 function ShadowForIos(){
     return(
         <>

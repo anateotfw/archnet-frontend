@@ -1,14 +1,14 @@
 import React from "react";
-import step1MastsuriAndroid from "../../../images/Matsuri/1.png";
-import step2MastsuriAndroid from "../../../images/Matsuri/2.png";
-import step3MastsuriAndroid from "../../../images/Matsuri/3.png";
-import step4MastsuriAndroid from "../../../images/Matsuri/4.png";
-import step5MastsuriAndroid from "../../../images/Matsuri/5.png";
-import step6MastsuriAndroid from "../../../images/Matsuri/6.png";
-import step7MastsuriAndroid from "../../../images/Matsuri/7.png";
-import step8MastsuriAndroid from "../../../images/Matsuri/8.png";
-import step9MastsuriAndroid from "../../../images/Matsuri/9.png";
-import Mastsuri from "../../../images/matsuri.png";
+import step1MastsuriAndroid from "../../../images/Matsuri/1.webp";
+import step2MastsuriAndroid from "../../../images/Matsuri/2.webp";
+import step3MastsuriAndroid from "../../../images/Matsuri/3.webp";
+import step4MastsuriAndroid from "../../../images/Matsuri/4.webp";
+import step5MastsuriAndroid from "../../../images/Matsuri/5.webp";
+import step6MastsuriAndroid from "../../../images/Matsuri/6.webp";
+import step7MastsuriAndroid from "../../../images/Matsuri/7.webp";
+import step8MastsuriAndroid from "../../../images/Matsuri/8.webp";
+import step9MastsuriAndroid from "../../../images/Matsuri/9.webp";
+import Mastsuri from "../../../images/matsuri.webp";
 function MatsuriForAndroid(){
     return(
         <>

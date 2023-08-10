@@ -1,7 +1,7 @@
 import "./../Main/Main.css";
 import React from "react";
 import pic from "./../../images/pic.avif";
-import archImg from "./../../images/arch.png";
+import archImg from "./../../images/arch.webp";
 import { Outlet,Link } from "react-router-dom";
 import LogoNothing from "./../../images/Logo(Nothing) (1).png";
 // import "./../Menu/MenuMain.css"

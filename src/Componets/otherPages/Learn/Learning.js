@@ -5,15 +5,15 @@ import {ScrollTrigger} from "gsap/all";
 import iran from "./../../../images/iran.jpg"
 import Background from "../../../images/iran.jpg";
 import linux from "./../../../images/icons8-linux-24 (1).png";
-import clashMeta from "./../../../images/clashMeta.png";
-import hiddify from "./../../../images/hiddify.png";
-import v2ray from "./../../../images/v2ray.png";
-import matsuri from "./../../../images/matsuri.png";
-import shadowrocket from "./../../../images/shadowrocket.png";
+import clashMeta from "./../../../images/clashMeta.webp";
+import hiddify from "./../../../images/hiddify.webp";
+import v2ray from "./../../../images/v2ray.webp";
+import matsuri from "./../../../images/matsuri.webp";
+import shadowrocket from "./../../../images/shadowrocket.webp";
 import v2box from "./../../../images/v2box.jpg";
 import foxray from "./../../../images/foxray.jpg";
-import Nekoray from "./../../../images/Nekoray.png";
-import clashverge from "./../../../images/clashVerge.png";
+import Nekoray from "./../../../images/Nekoray.webp";
+import clashverge from "./../../../images/clashVerge.webp";
 import workSystem from "./../../../images/work.svg";
 import workSystem2 from "./../../../images/work2.svg";
 import workSystem3 from "./../../../images/work5.svg";
@@ -28,7 +28,7 @@ import V2rayForWindows from "../../Apps/Windows/V2rayForWindows";
 import ClashMetaForWindows from "../../Apps/Windows/ClashMetaForWindows";
 import ClashForMac from "../../Apps/Mac/ClashForMac";
 import NekorayForLinux from "../../Apps/Linux/NekorayForLinux";
-import streisand from "./../../../images/streisand2.png";
+import streisand from "./../../../images/streisand2.webp";
 const Learning=()=>{
     useEffect(()=>
     {

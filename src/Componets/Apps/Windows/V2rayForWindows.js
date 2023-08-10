@@ -1,16 +1,16 @@
 import React from "react";
-import v2ray from "./../../../images/v2ray.png"
-import step1V2rayWindows from "../../../images/V2raywindows/1.png";
-import step2V2rayWindows from "../../../images/V2raywindows/2.png";
-import step3V2rayWindows from "../../../images/V2raywindows/3.png";
-import step4V2rayWindows from "../../../images/V2raywindows/5.png";
-import step5V2rayWindows from "../../../images/V2raywindows/6.png";
-import step6V2rayWindows from "../../../images/V2raywindows/7.png";
-import step7V2rayWindows from "../../../images/V2raywindows/8.png";
-import step8V2rayWindows from "../../../images/V2raywindows/9.png";
-import step9V2rayWindows from "../../../images/V2raywindows/10.png";
-import step10V2rayWindows from "../../../images/V2raywindows/11.png";
-import step11V2rayWindows from "../../../images/V2raywindows/12.png";
+import v2ray from "./../../../images/v2ray.webp"
+import step1V2rayWindows from "../../../images/V2raywindows/1.webp";
+import step2V2rayWindows from "../../../images/V2raywindows/2.webp";
+import step3V2rayWindows from "../../../images/V2raywindows/3.webp";
+import step4V2rayWindows from "../../../images/V2raywindows/5.webp";
+import step5V2rayWindows from "../../../images/V2raywindows/6.webp";
+import step6V2rayWindows from "../../../images/V2raywindows/7.webp";
+import step7V2rayWindows from "../../../images/V2raywindows/8.webp";
+import step8V2rayWindows from "../../../images/V2raywindows/9.webp";
+import step9V2rayWindows from "../../../images/V2raywindows/10.webp";
+import step10V2rayWindows from "../../../images/V2raywindows/11.webp";
+import step11V2rayWindows from "../../../images/V2raywindows/12.webp";
 
 
 function V2rayForWindows(){

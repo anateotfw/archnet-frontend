@@ -1,14 +1,14 @@
 import React from "react";
-import step1StreisandIos from "../../../images/StreisandIOS/0.png";
-import step2StreisandIos from "../../../images/StreisandIOS/1.png";
-import step3StreisandIos from "../../../images/StreisandIOS/2.png";
-import step4StreisandIos from "../../../images/StreisandIOS/3.png";
-import step5StreisandIos from "../../../images/StreisandIOS/4.png";
-import step6StreisandIos from "../../../images/StreisandIOS/5.png";
-import step7StreisandIos from "../../../images/StreisandIOS/6.png";
-import step8StreisandIos from "../../../images/StreisandIOS/7.png";
-import step9StreisandIos from "../../../images/StreisandIOS/8.png";
-import Streisand from "../../../images/streisand2.png";
+import step1StreisandIos from "../../../images/StreisandIOS/0.webp";
+import step2StreisandIos from "../../../images/StreisandIOS/1.webp";
+import step3StreisandIos from "../../../images/StreisandIOS/2.webp";
+import step4StreisandIos from "../../../images/StreisandIOS/3.webp";
+import step5StreisandIos from "../../../images/StreisandIOS/4.webp";
+import step6StreisandIos from "../../../images/StreisandIOS/5.webp";
+import step7StreisandIos from "../../../images/StreisandIOS/6.webp";
+import step8StreisandIos from "../../../images/StreisandIOS/7.webp";
+import step9StreisandIos from "../../../images/StreisandIOS/8.webp";
+import Streisand from "../../../images/streisand2.webp";
 
 
 function StreisandForIos(){

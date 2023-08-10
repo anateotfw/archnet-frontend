@@ -1,14 +1,14 @@
 import React from "react";
-import step1NekorayWindows from "../../../images/NekoRayWindows/1.png";
-import step2NekorayWindows from "../../../images/NekoRayWindows/2.png";
-import step3NekorayWindows from "../../../images/NekoRayWindows/3.png";
-import step4NekorayWindows from "../../../images/NekoRayWindows/4.png";
-import step5NekorayWindows from "../../../images/NekoRayWindows/5.png";
-import step6NekorayWindows from "../../../images/NekoRayWindows/6.png";
-import step7NekorayWindows from "../../../images/NekoRayWindows/7.png";
-import step8NekorayWindows from "../../../images/NekoRayWindows/8.png";
-import step9NekorayWindows from "../../../images/NekoRayWindows/9.png";
-import NekorayWindows from "../../../images/Nekoray.png";
+import step1NekorayWindows from "../../../images/NekoRayWindows/1.webp";
+import step2NekorayWindows from "../../../images/NekoRayWindows/2.webp";
+import step3NekorayWindows from "../../../images/NekoRayWindows/3.webp";
+import step4NekorayWindows from "../../../images/NekoRayWindows/4.webp";
+import step5NekorayWindows from "../../../images/NekoRayWindows/5.webp";
+import step6NekorayWindows from "../../../images/NekoRayWindows/6.webp";
+import step7NekorayWindows from "../../../images/NekoRayWindows/7.webp";
+import step8NekorayWindows from "../../../images/NekoRayWindows/8.webp";
+import step9NekorayWindows from "../../../images/NekoRayWindows/9.webp";
+import NekorayWindows from "../../../images/Nekoray.webp";
 
 function NekorayForWindows(){
     return(

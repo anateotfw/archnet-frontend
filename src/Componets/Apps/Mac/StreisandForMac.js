@@ -1,14 +1,14 @@
 import React from "react";
-import step1StreisandMac from "../../../images/StreisandMac/1.png";
-import step2StreisandMac from "../../../images/StreisandMac/2.png";
-import step3StreisandMac from "../../../images/StreisandMac/3.png";
-import step4StreisandMac from "../../../images/StreisandMac/4.png";
-import step5StreisandMac from "../../../images/StreisandMac/5.png";
-import step6StreisandMac from "../../../images/StreisandMac/6.png";
-import step7StreisandMac from "../../../images/StreisandMac/7.png";
-import step8StreisandMac from "../../../images/StreisandMac/8.png";
-import step9StreisandMac from "../../../images/StreisandMac/9.png";
-import Streisand from "../../../images/streisand2.png";
+import step1StreisandMac from "../../../images/StreisandMac/1.webp";
+import step2StreisandMac from "../../../images/StreisandMac/2.webp";
+import step3StreisandMac from "../../../images/StreisandMac/3.webp";
+import step4StreisandMac from "../../../images/StreisandMac/4.webp";
+import step5StreisandMac from "../../../images/StreisandMac/5.webp";
+import step6StreisandMac from "../../../images/StreisandMac/6.webp";
+import step7StreisandMac from "../../../images/StreisandMac/7.webp";
+import step8StreisandMac from "../../../images/StreisandMac/8.webp";
+import step9StreisandMac from "../../../images/StreisandMac/9.webp";
+import Streisand from "../../../images/streisand2.webp";
 
 
 function StreisandForMac(){

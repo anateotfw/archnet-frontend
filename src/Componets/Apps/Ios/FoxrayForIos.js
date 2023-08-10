@@ -1,9 +1,9 @@
 import React from "react";
-import step1FoxrayIos from "../../../images/ForXrayIos/1.png";
-import step2FoxrayIos from "../../../images/ForXrayIos/2.png";
-import step3FoxrayIos from "../../../images/ForXrayIos/3.png";
-import step4FoxrayIos from "../../../images/ForXrayIos/4.png";
-import step5FoxrayIos from "../../../images/ForXrayIos/5.png";
+import step1FoxrayIos from "../../../images/ForXrayIos/1.webp";
+import step2FoxrayIos from "../../../images/ForXrayIos/2.webp";
+import step3FoxrayIos from "../../../images/ForXrayIos/3.webp";
+import step4FoxrayIos from "../../../images/ForXrayIos/4.webp";
+import step5FoxrayIos from "../../../images/ForXrayIos/5.webp";
 
 import Foxray from "../../../images/foxray.jpg";
 

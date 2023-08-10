@@ -2,7 +2,7 @@ import { ScrollTrigger } from "gsap/all";
 import "./Subscription.css";
 import Background from "./../../../images/iran.jpg"
 import React, {useEffect} from "react";
-import archNet from "./../../../images/chatImg.png";
+import archNet from "./../../../images/chatImg.webp";
 import backGround from "./../../../images/s.jpg";
 import {gsap} from "gsap";
 const Subscription=()=>{

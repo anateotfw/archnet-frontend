@@ -1,11 +1,11 @@
 import React from "react";
-import hiddify from "../../../images/hiddify.png";
-import step1hiddifyWindows from "../../../images/HiddinfyNwindows/1.png";
-import step2hiddifyWindows from "../../../images/HiddinfyNwindows/2.png";
-import step3hiddifyWindows from "../../../images/HiddinfyNwindows/3.png";
-import step4hiddifyWindows from "../../../images/HiddinfyNwindows/4.png";
-import step5hiddifyWindows from "../../../images/HiddinfyNwindows/5.png";
-import step6hiddifyWindows from "../../../images/HiddinfyNwindows/6.png";
+import hiddify from "../../../images/hiddify.webp";
+import step1hiddifyWindows from "../../../images/HiddinfyNwindows/1.webp";
+import step2hiddifyWindows from "../../../images/HiddinfyNwindows/2.webp";
+import step3hiddifyWindows from "../../../images/HiddinfyNwindows/3.webp";
+import step4hiddifyWindows from "../../../images/HiddinfyNwindows/4.webp";
+import step5hiddifyWindows from "../../../images/HiddinfyNwindows/5.webp";
+import step6hiddifyWindows from "../../../images/HiddinfyNwindows/6.webp";
 
 
 function HiddifyForWindows(){

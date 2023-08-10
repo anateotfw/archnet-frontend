@@ -4,9 +4,9 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useEffect } from "react";
 import pic from "./../../images/pic copy.png";
-import archImg from "./../../images/arch.png";
+import archImg from "./../../images/arch.webp";
 import picOfBus from "./../../images/undraw_co-working_re_w93t.svg";
-import archFont from "./../../images/archFont.png";
+import archFont from "./../../images/archFont.webp";
 import LogoNothing from "./../../images/Logo(Nothing) (1).png";
 import picOfCard1 from "./../../images/undraw_devices_re_dxae (1).svg";
 import picOfCard2 from "./../../images/undraw_security_on_re_e491 (1).svg";
@@ -20,7 +20,7 @@ import iran from "./../../images/iran.jpg";
 // import f from "./../../../SomePics/f.jpg";
 import picOfsection3 from "./../../images/undraw_voice_assistant_nrv7.svg";
 import device from "./../../images/Macbook Pro - Copy@10-1440x708 (3).jpg"
-import busPic1 from "./../../images/Room - Girl Working - Copy@10-1440x849.png"
+import busPic1 from "./../../images/Room - Girl Working - Copy@10-1440x849.webp"
 import device2 from "./../../images/Macbook Pro - Copy - Copy@5-428x926.jpg";
 import busPic2 from "./../../images/Room - Relaxing - Copy@10-1440x708.jpg";
 import linux from "./../../images/icons8-linux-24 (1).png";

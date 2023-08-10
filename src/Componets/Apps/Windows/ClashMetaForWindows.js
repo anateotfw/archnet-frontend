@@ -1,15 +1,15 @@
 import React from "react";
-import step1ClashWindows from "../../../images/Clash-Verge-Windows/1.png";
-import step2ClashWindows from "../../../images/Clash-Verge-Windows/2.png";
-import step3ClashWindows from "../../../images/Clash-Verge-Windows/3.png";
-import step4ClashWindows from "../../../images/Clash-Verge-Windows/4.png";
-import step5ClashWindows from "../../../images/Clash-Verge-Windows/5.png";
-import step6ClashWindows from "../../../images/Clash-Verge-Windows/6.png";
-import step7ClashWindows from "../../../images/Clash-Verge-Windows/7.png";
-import step8ClashWindows from "../../../images/Clash-Verge-Windows/8.png";
-import step9ClashWindows from "../../../images/Clash-Verge-Windows/9.png";
-import step10ClashWindows from "../../../images/Clash-Verge-Windows/10.png";
-import clashVerge from "../../../images/clashVerge.png";
+import step1ClashWindows from "../../../images/Clash-Verge-Windows/1.webp";
+import step2ClashWindows from "../../../images/Clash-Verge-Windows/2.webp";
+import step3ClashWindows from "../../../images/Clash-Verge-Windows/3.webp";
+import step4ClashWindows from "../../../images/Clash-Verge-Windows/4.webp";
+import step5ClashWindows from "../../../images/Clash-Verge-Windows/5.webp";
+import step6ClashWindows from "../../../images/Clash-Verge-Windows/6.webp";
+import step7ClashWindows from "../../../images/Clash-Verge-Windows/7.webp";
+import step8ClashWindows from "../../../images/Clash-Verge-Windows/8.webp";
+import step9ClashWindows from "../../../images/Clash-Verge-Windows/9.webp";
+import step10ClashWindows from "../../../images/Clash-Verge-Windows/10.webp";
+import clashVerge from "../../../images/clashVerge.webp";
 
 
 function ClashMetaForWindows(){
