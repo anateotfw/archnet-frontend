@@ -153,7 +153,7 @@ function MatsuriForAndroid(){
 
                         <div className="mt-12 text-center">
 
-                            <img src={Mastsuri} className="imageOnApps" alt="v2ray"/>
+                            <img src={Mastsuri} className="imageOnApps" alt="Mastsuri"/>
                         </div>
                     </div>
                 </section>

@@ -24,6 +24,10 @@ import NekorayForLinux from "./Componets/Apps/Linux/NekorayForLinux";
 import StreisandForIos from "./Componets/Apps/Ios/StreisandForIos";
 import StreisandForMac from "./Componets/Apps/Mac/StreisandForMac";
 import ScrollFromTop from "./Componets/Main/ScrollFromTop";
+import BasicTraining from "./Componets/BasisTraining /BasicTraining";
+import LinkChanging from "./Componets/BasisTraining /LinkChanging";
+import ConnectToRobot from "./Componets/BasisTraining /ConnectToRobot";
+import TestSubscription from "./Componets/BasisTraining /TestSubscription";
 
 function App() {
  return(
@@ -52,6 +56,10 @@ function App() {
     <Route path="NekorayForLinux" element={<NekorayForLinux/>}/>
     <Route path="StreisandForIos" element={<StreisandForIos/>}/>
     <Route path="StreisandForMac" element={<StreisandForMac/>}/>
+    <Route path="BasicTraining" element={<BasicTraining/>}/>
+    <Route path="LinkChanging" element={<LinkChanging/>}/>
+    <Route path="ConnectToRobot" element={<ConnectToRobot/>}/>
+    <Route path="TestSubscription" element={<TestSubscription/>}/>
 </Route>
 </Routes>
     </ScrollFromTop>

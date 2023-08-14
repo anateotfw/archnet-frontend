@@ -181,7 +181,7 @@ function ShadowForIos(){
                         </div>
                         <div className="mt-12 text-center">
 
-                            <img src={ShadowRocket} className="imageOnApps" alt="v2ray"/>
+                            <img src={ShadowRocket} className="imageOnApps" alt="ShadowRocket"/>
                         </div>
                     </div>
                 </section>

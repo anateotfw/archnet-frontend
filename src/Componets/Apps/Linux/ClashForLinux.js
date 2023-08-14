@@ -215,7 +215,7 @@ function ClashForLinux(){
 
                         <div className="mt-12 text-center">
 
-                            <img src={clashVerge} className="imageOnApps" alt="v2ray"/>
+                            <img src={clashVerge} className="imageOnApps" alt="ClashVerge"/>
                         </div>
                     </div>
                 </section>

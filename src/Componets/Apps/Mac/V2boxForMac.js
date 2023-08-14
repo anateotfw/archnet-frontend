@@ -180,7 +180,7 @@ function V2boxForMac(){
 
                         <div className="mt-12 text-center">
 
-                            <img src={V2box} className="imageOnApps" alt="v2ray"/>
+                            <img src={V2box} className="imageOnApps" alt="V2box"/>
                         </div>
                     </div>
                 </section>

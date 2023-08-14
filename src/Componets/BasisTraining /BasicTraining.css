@@ -1,0 +1,20 @@
+.BasicTrainingMain{
+ position: fixed;
+    top: 15%;
+}
+.bgPurpleForText{
+    background-color: #6d4aff;
+}
+.LearnLink{
+   color: #6d4aff;
+    cursor: pointer;
+    font-size: large;
+}
+.LearnLink:hover{
+
+    color: #1b1b1b;
+}
+.LearnLink:active{
+
+    color: #6d4aff;
+}

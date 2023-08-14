@@ -99,7 +99,7 @@ function FoxrayForIos(){
 
                         <div className="mt-12 text-center">
 
-                            <img src={Foxray} className="imageOnApps" alt="v2ray"/>
+                            <img src={Foxray} className="imageOnApps" alt="Foxray"/>
                         </div>
                     </div>
                 </section>

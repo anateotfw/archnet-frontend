@@ -98,7 +98,7 @@ function HiddifyForWindows(){
 
                         <div className="mt-12 text-center">
 
-                            <img src={hiddify} className="imageOnApps" alt="v2ray"/>
+                            <img src={hiddify} className="imageOnApps" alt="Hiddify"/>
                         </div>
                     </div>
                 </section>

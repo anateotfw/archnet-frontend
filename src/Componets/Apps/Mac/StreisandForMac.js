@@ -141,7 +141,7 @@ function StreisandForMac(){
 
                         <div className="mt-12 text-center">
 
-                            <img src={Streisand} className="imageOnApps" alt="v2ray"/>
+                            <img src={Streisand} className="imageOnApps" alt="Streisand"/>
                         </div>
                     </div>
                 </section>

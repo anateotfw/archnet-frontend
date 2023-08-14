@@ -32,7 +32,7 @@ function ClashForAndroid(){
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                          <h1 className="colorOfSteps">1</h1>
-                                <img src={step1clashAndroid}/>
+                                <img src={step1clashAndroid} alt="step1clashAndroid"/>
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>دانلود برنامه</h2>
 
@@ -46,7 +46,7 @@ function ClashForAndroid(){
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <h1 className="colorOfSteps">2</h1>
-                                <img src={step2clashAndroid}/>
+                                <img src={step2clashAndroid} alt="step2clashAndroid"/>
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>ورود به برنامه</h2>
 
@@ -59,7 +59,7 @@ function ClashForAndroid(){
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <h1 className="colorOfSteps">3</h1>
-                                <img src={step3clashAndroid}/>
+                                <img src={step3clashAndroid} alt="step3clashAndroid"/>
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>بارگزاری </h2>
 
@@ -77,7 +77,7 @@ function ClashForAndroid(){
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <h1 className="colorOfSteps">4</h1>
-                                <img src={step4clashAndroid}/>
+                                <img src={step4clashAndroid} alt="step4clashAndroid"/>
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>فعال بودن</h2>
 
@@ -90,7 +90,7 @@ function ClashForAndroid(){
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <h1 className="colorOfSteps">5</h1>
-                                <img src={step5clashAndroid}/>
+                                <img src={step5clashAndroid} alt="step5clashAndroid"/>
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>مشاهده اشتراک و آپدیت</h2>
 
@@ -103,7 +103,7 @@ function ClashForAndroid(){
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <h1 className="colorOfSteps">6</h1>
-                                <img src={step6clashAndroid}/>
+                                <img src={step6clashAndroid} alt="step6clashAndroid"/>
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>فعال سازی </h2>
 
@@ -116,7 +116,7 @@ function ClashForAndroid(){
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <h1 className="colorOfSteps">7</h1>
-                                <img src={step7clashAndroid}/>
+                                <img src={step7clashAndroid} alt="step7clashAndroid"/>
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>سرورها</h2>
 
@@ -129,7 +129,7 @@ function ClashForAndroid(){
 
                         <div className="mt-12 text-center">
 
-                            <img src={clashAndroid} className="imageOnApps" alt="v2ray"/>
+                            <img src={clashAndroid} className="imageOnApps" alt="Clash"/>
                         </div>
                     </div>
                 </section>
