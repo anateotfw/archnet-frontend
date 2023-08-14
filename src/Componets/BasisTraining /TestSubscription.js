@@ -35,7 +35,7 @@ function TestSubscription(){
                                 {/*<h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>ورود به پنل کاربری</h2>*/}
 
                                 <p  className="mt-1 text-sm" style={{direction: "rtl"}}>
-                                    در پنل آرچ نت اکانت خود را بسازید و اشتراک تست یک روزه, یک گیگ به صورت خودکار فعال خواهد شد.
+                                    در پنل آرچ نت اکانت خود را بسازید و اشتراک تست یک روزه، یک گیگ به صورت خودکار فعال خواهد شد.
 
                                 </p>
                             </a>

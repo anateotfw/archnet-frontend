@@ -325,7 +325,7 @@ function Main(){
     <span className="footer-title">ارتباط با ما</span>
     <a className="link link-hover" href="https://t.me/Arch_Net">کانال تلگرام</a>
     <a className="link link-hover" href="https://t.me/Archnet_Admin">پشتیبانی تلگرام</a>
-    <a className="link link-hover">اکانت آزمایشی رایگان</a>
+    <a className="link link-hover" href="/TestSubscription">اکانت آزمایشی رایگان</a>
 
   </div>
   <div>
