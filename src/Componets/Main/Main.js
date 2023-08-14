@@ -172,12 +172,12 @@ function Main(){
 </section>
 
             {/*cards between section2 and 3*/}
-<div className="cardsDiv">
+<div className="cardsDiv2 mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8 section1Div">
     <div className="card w-96 bg-base-100 cardBetweenS2-3 shadow-lg cardBottom cardBetweenS2-3Shadow">
         <figure className="textContainer">
             <img src={shopCardImg} alt="connected_world_wuay" className="shopCardImg"/>
             <div className="centered ">اشتراک نامحدود چهار کاربره<br/>
-                تومان 255000 / ماهانه
+                <h3 className="" style={{direction: "rtl"}}>255000 تومان/ ماهانه</h3>
             </div>
         </figure>
         <div className="card-body">
@@ -203,7 +203,7 @@ function Main(){
 
             <img src={shopCardImg} alt="connected_world_wuay" className="shopCardImg"/>
             <div className="centered ">اشتراک نامحدود تک کاربره<br/>
-                تومان 155000 / ماهانه
+                <h3  style={{direction: "rtl"}}>155000 تومان/ ماهانه</h3>
             </div>
         </figure>
         <div className="card-body">
@@ -222,7 +222,7 @@ function Main(){
         <figure className="textContainer">
             <img src={shopCardImg} alt="connected_world_wuay" className="shopCardImg"/>
             <div className="centered ">اشتراک 5 گیگ تک کاربره<br/>
-                تومان 8500 / ماهانه
+                <h3 style={{direction: "rtl"}}>8500  تومان/ ماهانه</h3>
             </div>
         </figure>
         <div className="card-body">
@@ -249,7 +249,7 @@ function Main(){
 
 
 {/*tree cards after 3D pic*/}
-                <div className="cardsDiv">
+                <div className="cardsDiv ">
 
                     <div className="card w-96 bg-base-100  cardBetweenS2-3 cardBottom ">
                         <div className="card-body">

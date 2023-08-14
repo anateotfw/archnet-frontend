@@ -7,7 +7,7 @@ function BasicTraining(){
         <>
             <section className="text-black">
 
-                <div className="BasicTrainingMain">
+                <div className="BasicTrainingMain mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8 section1Div">
 
                 <div className="max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8" style={{direction: "rtl"}}>
                     <div className="max-w-xl" >

@@ -40,7 +40,7 @@ const Subscription=()=>{
 
 
                                 <h2 className="mt-4 text-xl font-bold text-black" style={{direction: "rtl"}}>اشتراک نامحدود چهار کاربره</h2>
-                                <h3 className="mt-4 text-small  text-purple-700" style={{direction: "rtl"}}>255000هزار تومان/ ماهانه</h3>
+                                <h3 className="mt-4 text-small  text-purple-700" style={{direction: "rtl"}}>255000 هزار تومان/ ماهانه</h3>
                                 <p className="mt-1 text-sm text-gray-500" style={{direction: "rtl"}}>
                                     <ul>
                                         <li>ترافیک: ‌نامحدود (منصفانه 1 ترابایت)</li>
@@ -60,7 +60,7 @@ const Subscription=()=>{
 
 
                                 <h2 className="mt-4 text-xl font-bold text-black" style={{direction: "rtl"}}>اشتراک نامحدود تک کاربره</h2>
-                                <h3 className="mt-4 text-small  text-purple-700" style={{direction: "rtl"}}>155000هزار تومان/ ماهانه</h3>
+                                <h3 className="mt-4 text-small  text-purple-700" style={{direction: "rtl"}}>155000 هزار تومان/ ماهانه</h3>
                                 <p className="mt-1 text-sm text-gray-500" style={{direction: "rtl"}}>
                                     <ul>
                                         <li>ترافیک: ‌نامحدود (منصفانه 1 ترابایت)</li>
@@ -81,7 +81,7 @@ const Subscription=()=>{
 
 
                                 <h2 className="mt-4 text-xl font-bold text-black" style={{direction: "rtl"}}>اشتراک 5 گیگ</h2>
-                                <h3 className="mt-4 text-small  text-purple-700" style={{direction: "rtl"}}>8500هزار تومان/ ماهانه</h3>
+                                <h3 className="mt-4 text-small  text-purple-700" style={{direction: "rtl"}}>8500 هزار تومان/ ماهانه</h3>
                                 <p className="mt-1 text-sm text-gray-500" style={{direction: "rtl"}}>
                                     <ul>
                                         <li>ترافیک: 5 گیگ</li>
@@ -102,7 +102,7 @@ const Subscription=()=>{
 
 
                                 <h2 className="mt-4 text-xl font-bold text-black" style={{direction: "rtl"}}>اشتراک 10 گیگ</h2>
-                                <h3 className="mt-4 text-small  text-purple-700" style={{direction: "rtl"}}>17000هزار تومان/ ماهانه</h3>
+                                <h3 className="mt-4 text-small  text-purple-700" style={{direction: "rtl"}}>17000 هزار تومان/ ماهانه</h3>
                                 <p className="mt-1 text-sm text-gray-500" style={{direction: "rtl"}}>
                                     <ul>
                                         <li>ترافیک: 10 گیگ</li>
@@ -123,7 +123,7 @@ const Subscription=()=>{
 
 
                                 <h2 className="mt-4 text-xl font-bold text-black" style={{direction: "rtl"}}>اشتراک 20 گیگ</h2>
-                                <h3 className="mt-4 text-small  text-purple-700" style={{direction: "rtl"}}>34000هزار تومان/ ماهانه</h3>
+                                <h3 className="mt-4 text-small  text-purple-700" style={{direction: "rtl"}}>34000 هزار تومان/ ماهانه</h3>
                                 <p className="mt-1 text-sm text-gray-500" style={{direction: "rtl"}}>
                                     <ul>
                                         <li>ترافیک: 20 گیگ</li>
@@ -145,7 +145,7 @@ const Subscription=()=>{
 
 
                                 <h2 className="mt-4 text-xl font-bold text-black" style={{direction: "rtl"}}>اشتراک 20 گیگ</h2>
-                                <h3 className="mt-4 text-small  text-purple-700" style={{direction: "rtl"}}>49000هزار تومان/ ماهانه</h3>
+                                <h3 className="mt-4 text-small  text-purple-700" style={{direction: "rtl"}}>49000 هزار تومان/ ماهانه</h3>
                                 <p className="mt-1 text-sm text-gray-500" style={{direction: "rtl"}}>
                                     <ul>
                                         <li>ترافیک: 20 گیگ</li>
@@ -168,7 +168,7 @@ const Subscription=()=>{
 
 
                                 <h2 className="mt-4 text-xl font-bold text-black" style={{direction: "rtl"}}>اشتراک 50 گیگ </h2>
-                                <h3 className="mt-4 text-small  text-purple-700" style={{direction: "rtl"}}>100000هزار تومان/ ماهانه</h3>
+                                <h3 className="mt-4 text-small  text-purple-700" style={{direction: "rtl"}}>100000 هزار تومان/ ماهانه</h3>
                                 <p className="mt-1 text-sm text-gray-500" style={{direction: "rtl"}}>
                                     <ul>
                                         <li>ترافیک: 50 گیگ</li>
@@ -191,7 +191,7 @@ const Subscription=()=>{
 
 
                                 <h2 className="mt-4 text-xl font-bold text-black" style={{direction: "rtl"}}>اشتراک 90 گیگ</h2>
-                                <h3 className="mt-4 text-small  text-purple-700" style={{direction: "rtl"}}>198000هزار تومان/ ماهانه</h3>
+                                <h3 className="mt-4 text-small  text-purple-700" style={{direction: "rtl"}}>198000 هزار تومان/ ماهانه</h3>
                                 <p className="mt-1 text-sm text-gray-500" style={{direction: "rtl"}}>
                                     <ul>
                                         <li>ترافیک: 90 گیگ</li>
@@ -216,7 +216,7 @@ const Subscription=()=>{
 
 
                                 <h2 className="mt-4 text-xl font-bold text-black" style={{direction: "rtl"}}>اشتراک 100 گیگ</h2>
-                                <h3 className="mt-4 text-small  text-purple-700" style={{direction: "rtl"}}>215000هزار تومان/ ماهانه</h3>
+                                <h3 className="mt-4 text-small  text-purple-700" style={{direction: "rtl"}}>215000 هزار تومان/ ماهانه</h3>
                                 <p className="mt-1 text-sm text-gray-500" style={{direction: "rtl"}}>
                                     <ul>
                                         <li>ترافیک: 100 گیگ</li>

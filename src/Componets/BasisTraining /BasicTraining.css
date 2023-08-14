@@ -1,6 +1,7 @@
 .BasicTrainingMain{
- position: fixed;
-    top: 15%;
+    position: relative;
+    top: 70px;
+
 }
 .bgPurpleForText{
     background-color: #6d4aff;
