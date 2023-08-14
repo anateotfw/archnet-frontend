@@ -136,8 +136,9 @@ function Main(){
 </div>
 </section>
 
-<section>
-    <section>
+
+
+    <section className="explainSection">
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8" style={{direction: "rtl"}}>
             <div className="max-w-3xl">
                 <h2 className="text-3xl font-bold sm:text-4xl" >
@@ -169,7 +170,7 @@ function Main(){
             </div>
         </div>
     </section>
-</section>
+
 
             {/*cards between section2 and 3*/}
 <div className="cardsDiv2 mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8 section1Div">

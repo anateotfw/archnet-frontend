@@ -1,7 +1,22 @@
 .BasicTrainingMain{
-    position: relative;
-    top: 70px;
+ /*margin-right: auto;*/
+ /*   margin-left: auto;*/
+ /*   justify-content: center;*/
+ /*   align-content: center;*/
+ /*   display: flex;*/
 
+
+
+
+}
+.sectionOfTraicing{
+
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .bgPurpleForText{
     background-color: #6d4aff;
@@ -18,4 +33,18 @@
 .LearnLink:active{
 
     color: #6d4aff;
+}
+
+@media only screen and (min-width: 1024px) {
+    .BasicTrainingMain{
+     padding: 150px;
+
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .BasicTrainingMain{
+        padding-top: 150px;
+
+    }
 }

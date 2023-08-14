@@ -576,9 +576,15 @@ width: 80%;
     .devicePic2{
         display: block;
     }
+
 }
 
 
 .section2 {
     min-height: 70vh;
+}
+
+
+.explainSection{
+    min-height: 30vh;
 }

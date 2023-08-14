@@ -5,9 +5,9 @@ import {Link} from "react-router-dom";
 function BasicTraining(){
     return(
         <>
-            <section className="text-black">
+            <section className="text-black sectionOfTraicing">
 
-                <div className="BasicTrainingMain mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8 section1Div">
+                <div className="BasicTrainingMain">
 
                 <div className="max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8" style={{direction: "rtl"}}>
                     <div className="max-w-xl" >
