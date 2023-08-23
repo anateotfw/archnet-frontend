@@ -310,7 +310,7 @@ function Main(){
 
     <span className="footer-title">خدمات</span>
     <a className="link link-hover" href="/Subscription">خرید اشتراک</a>
-    <a className="link link-hover" href="speedtest.archnet-cloud.com">تست سرعت</a>
+    <a className="link link-hover" href="http://speedtest.archnet-cloud.com/">تست سرعت</a>
    <a className="link link-hover" href="http://status.archnet.online:8008/">سرور ها</a>
 
 {/* Put this part before </body> tag */}
