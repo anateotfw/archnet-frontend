@@ -28,6 +28,7 @@ import BasicTraining from "./Componets/BasisTraining /BasicTraining";
 import LinkChanging from "./Componets/BasisTraining /LinkChanging";
 import ConnectToRobot from "./Componets/BasisTraining /ConnectToRobot";
 import TestSubscription from "./Componets/BasisTraining /TestSubscription";
+import FAQs from "./Componets/Apps/FAQs/FAQs";
 
 function App() {
  return(
@@ -60,6 +61,7 @@ function App() {
     <Route path="LinkChanging" element={<LinkChanging/>}/>
     <Route path="ConnectToRobot" element={<ConnectToRobot/>}/>
     <Route path="TestSubscription" element={<TestSubscription/>}/>
+    <Route path="FAQs" element={<FAQs/>}/>
 </Route>
 </Routes>
     </ScrollFromTop>

@@ -1,0 +1,32 @@
+.centerFAQdiv{
+    /*width: 50%;*/
+    direction: rtl;
+    margin: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+}
+
+/*!*computer*!   its mean more than 1024*/
+@media only screen and (min-width: 1024px) {
+    .centerFAQdiv{
+        width: 65%;
+    }
+}
+.unOrderListFAQs{
+    list-style-type: disc;
+}
+.purpleTXT{
+    /*color: #8093F1;*/
+    color: #B8C0FF;
+    /*color: #F72585;*/
+}
+/*mobile*/
+@media only screen and (max-width: 1000px) {
+    .centerFAQdiv{
+
+        padding-top: 100px;
+
+
+    }
+}
