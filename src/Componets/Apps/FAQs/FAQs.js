@@ -147,7 +147,7 @@ function FAQs(){
                            className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
                        >
                            <h2 className="font-medium">
-                               5. از کدام دیتاسنتر های استفاده میکنید؟
+                               5. از کدام دیتا سنتر ها استفاده میکنید؟
                            </h2>
 
                            <svg
@@ -302,7 +302,7 @@ function FAQs(){
                            className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
                        >
                            <h2 className="font-medium">
-                               10. محدودیت ایپی به چه صورت کار میکند؟
+                               10. محدودیت آیپی به چه صورت کار میکند؟
                            </h2>
 
                            <svg
