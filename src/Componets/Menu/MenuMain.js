@@ -28,7 +28,7 @@ function MenuMain(){
       <Link to="/Learning"><li><a>آموزش</a></li></Link>
       <Link to="/Subscription"><li><a>اشتراک ها</a></li></Link>
           <Link to="/BasicTraining"><li><a>آموزش های پایه</a></li></Link>
-          <Link to="/FAQs"><li><a>سوالات پر تکرار</a></li></Link>
+          <Link to="/FAQs"><li><a>پرسش‌های متداول</a></li></Link>
       </ul>
     </div>
   </div>
