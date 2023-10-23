@@ -9,7 +9,7 @@ import Learning from "./Componets/otherPages/Learn/Learning";
 import ClashForAndroid from "./Componets/Apps/Android/ClashForAndroid";
 import HiddifyForAndroid from "./Componets/Apps/Android/HiddifyForAndroid";
 import V2rayForAndroid from "./Componets/Apps/Android/V2rayForAndroid";
-import MatsuriForAndroid from "./Componets/Apps/Android/MatsuriForAndroid";
+import MatsuriForAndroid from "./Componets/Apps/Android/NekoboxForAndroid";
 import ShadowForIos from "./Componets/Apps/Ios/ShadowForIos";
 import FoxrayForIos from "./Componets/Apps/Ios/FoxrayForIos";
 import V2boxForIos from "./Componets/Apps/Ios/V2boxForIos";
@@ -29,6 +29,8 @@ import LinkChanging from "./Componets/BasisTraining /LinkChanging";
 import ConnectToRobot from "./Componets/BasisTraining /ConnectToRobot";
 import TestSubscription from "./Componets/BasisTraining /TestSubscription";
 import FAQs from "./Componets/Apps/FAQs/FAQs";
+import NekoboxForAndroid from "./Componets/Apps/Android/NekoboxForAndroid";
+import Training from "./Componets/otherPages/Learn/Learning";
 
 function App() {
  return(
@@ -38,12 +40,12 @@ function App() {
 <Routes>
 <Route path="/" element={<MenuMain/>}>
 <Route index element={<Main/>}/>
-<Route path="Learning" element={<Learning/>}/>
+<Route path="Training" element={<Training/>}/>
 <Route path="Subscription" element={<Subscription/>}/>
     <Route path="ClashForAndroid" element={<ClashForAndroid/>}/>
     <Route path="HiddifyForAndroid" element={<HiddifyForAndroid/>}/>
     <Route path="V2rayForAndroid" element={<V2rayForAndroid/>}/>
-    <Route path="MatsuriForAndroid" element={<MatsuriForAndroid/>}/>
+    <Route path="NekoboxForAndroid" element={<NekoboxForAndroid/>}/>
     <Route path="ShadowForIos" element={<ShadowForIos/>}/>
     <Route path="FoxrayForIos" element={<FoxrayForIos/>}/>
     <Route path="V2boxForIos" element={<V2boxForIos/>}/>

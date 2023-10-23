@@ -20,7 +20,7 @@ import workSystem3 from "./../../../images/work5.svg";
 import {Link} from "react-router-dom";
 import HiddifyForAndroid from "../../Apps/Android/HiddifyForAndroid";
 import V2rayForAndroid from "../../Apps/Android/V2rayForAndroid";
-import MatsuriForAndroid from "../../Apps/Android/MatsuriForAndroid";
+import MatsuriForAndroid from "../../Apps/Android/NekoboxForAndroid";
 import ShadowForIos from "../../Apps/Ios/ShadowForIos";
 import FoxrayForIos from "../../Apps/Ios/FoxrayForIos";
 import V2boxForIos from "../../Apps/Ios/V2boxForIos";
@@ -29,7 +29,8 @@ import ClashMetaForWindows from "../../Apps/Windows/ClashMetaForWindows";
 import ClashForMac from "../../Apps/Mac/ClashForMac";
 import NekorayForLinux from "../../Apps/Linux/NekorayForLinux";
 import streisand from "./../../../images/streisand2.webp";
-const Learning=()=>{
+import Nekobox from "./../../../images/NekoboxAndroid.png";
+const Training=()=>{
     useEffect(()=>
     {
         gsap.registerPlugin(ScrollTrigger);
@@ -338,13 +339,13 @@ const Learning=()=>{
                                 <a
                                     className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                                 >
-                                    <Link to="/MatsuriForAndroid">
-                                    <img src={matsuri} className="sizeOfIcon" alt="matsuri"/>
+                                    <Link to="/NekoboxForAndroid">
+                                    <img src={Nekobox} className="sizeOfIcon" alt="matsuri"/>
 
-                                    <h2 className="mt-4 text-2xl font-bold text-white">Matsuri</h2>
+                                    <h2 className="mt-4 text-2xl font-bold text-white">Nekobox</h2>
 
                                     <p className="mt-1 text-xl text-gray-300" style={{direction: "rtl"}}>
-                                        برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه Matsuri روی این آموزش کلیک کنید.
+                                        برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه Nekobox روی این آموزش کلیک کنید.
                                     </p>
                                     </Link>
                                 </a>
@@ -678,4 +679,4 @@ const Learning=()=>{
         </>
     );
 }
-export default Learning;
+export default Training;
