@@ -5,7 +5,7 @@ import Main from "./Componets/Main/Main";
 import { BrowserRouter,Route,Routes } from "react-router-dom";
 import MenuMain from "./Componets/Menu/MenuMain";
 import Subscription from "./Componets/otherPages/Sub/Subscription";
-import Learning from "./Componets/otherPages/Learn/Learning";
+import Learning from "./Componets/otherPages/Learn/Tutorial";
 import ClashForAndroid from "./Componets/Apps/Android/ClashForAndroid";
 import HiddifyForAndroid from "./Componets/Apps/Android/HiddifyForAndroid";
 import V2rayForAndroid from "./Componets/Apps/Android/V2rayForAndroid";
@@ -30,7 +30,8 @@ import ConnectToRobot from "./Componets/BasisTraining /ConnectToRobot";
 import TestSubscription from "./Componets/BasisTraining /TestSubscription";
 import FAQs from "./Componets/Apps/FAQs/FAQs";
 import NekoboxForAndroid from "./Componets/Apps/Android/NekoboxForAndroid";
-import Training from "./Componets/otherPages/Learn/Learning";
+
+import Tutorial from "./Componets/otherPages/Learn/Tutorial";
 
 function App() {
  return(
@@ -40,7 +41,7 @@ function App() {
 <Routes>
 <Route path="/" element={<MenuMain/>}>
 <Route index element={<Main/>}/>
-<Route path="Training" element={<Training/>}/>
+<Route path="Tutorial" element={<Tutorial/>}/>
 <Route path="Subscription" element={<Subscription/>}/>
     <Route path="ClashForAndroid" element={<ClashForAndroid/>}/>
     <Route path="HiddifyForAndroid" element={<HiddifyForAndroid/>}/>

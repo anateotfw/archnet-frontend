@@ -331,9 +331,9 @@ function Main(){
   </div>
   <div>
     <span className="footer-title">آموزش ها</span>
-    <a className="link link-hover" href="/Training">اتصال ویندوز </a>
-    <a className="link link-hover" href="/Training">اتصال اندروید</a>
-    <a className="link link-hover" href="/Training">ios اتصال</a>
+    <a className="link link-hover" href="/Tutorial">اتصال ویندوز </a>
+    <a className="link link-hover" href="/Tutorial">اتصال اندروید</a>
+    <a className="link link-hover" href="/Tutorial">ios اتصال</a>
   </div>
 </footer>
 

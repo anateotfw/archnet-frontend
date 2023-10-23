@@ -30,7 +30,7 @@ import ClashForMac from "../../Apps/Mac/ClashForMac";
 import NekorayForLinux from "../../Apps/Linux/NekorayForLinux";
 import streisand from "./../../../images/streisand2.webp";
 import Nekobox from "./../../../images/NekoboxAndroid.png";
-const Training=()=>{
+const Tutorial=()=>{
     useEffect(()=>
     {
         gsap.registerPlugin(ScrollTrigger);
@@ -679,4 +679,4 @@ const Training=()=>{
         </>
     );
 }
-export default Training;
+export default Tutorial;
