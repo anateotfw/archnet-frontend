@@ -30,6 +30,8 @@ import ClashForMac from "../../Apps/Mac/ClashForMac";
 import NekorayForLinux from "../../Apps/Linux/NekorayForLinux";
 import streisand from "./../../../images/streisand2.webp";
 import Nekobox from "./../../../images/NekoboxAndroid.png";
+import ShadowRocketMac from "./../../../images/shadowRocketiconMac.png"
+
 const Tutorial=()=>{
     useEffect(()=>
     {
@@ -597,6 +599,19 @@ const Tutorial=()=>{
                             </a>
 
 
+                            <a
+                                className="macApp block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
+                            >
+                                <Link to="/ShadowRocketMac">
+                                    <img src={ShadowRocketMac} className="sizeOfIcon" alt="v2box"/>
+
+                                    <h2 className="mt-4 text-2xl font-bold text-black">ShadowRocket</h2>
+
+                                    <p className="mt-1 text-xl text-black" style={{direction: "rtl"}}>
+                                        برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه ShadowRocket روی این آموزش کلیک کنید.
+                                    </p>
+                                </Link>
+                            </a>
 
 
                         </div>
