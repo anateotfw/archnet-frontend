@@ -42,7 +42,7 @@ function ShadowRocketMac(){
                                 <h1 className="colorOfSteps">2</h1>
                                 <img src={step2ShadowRocketForMac}/>
 
-                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>نصب برنامه</h2>
+                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>اضافه کردن لینک اتصال</h2>
 
 
                             </a>
@@ -53,7 +53,7 @@ function ShadowRocketMac(){
                                 <h1 className="colorOfSteps">3</h1>
                                 <img src={step3ShadowRocketForMac}/>
 
-                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>کپی کردن لینک اتصال </h2>
+                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>تنطیمات جهت لینک اتصال </h2>
 
 
                             </a>
@@ -64,7 +64,7 @@ function ShadowRocketMac(){
                                 <h1 className="colorOfSteps">4</h1>
                                 <img src={step4ShadowRocketForMac}/>
 
-                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>اجرا و بارگزاری </h2>
+                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>اتصال و آپدیت</h2>
 
 
                             </a>
