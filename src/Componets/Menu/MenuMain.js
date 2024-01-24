@@ -58,8 +58,8 @@ function MenuMain(){
   Inbox
   <div className="badge badge-secondary">+99</div>
 </button> */}
-<button className="btn btn-sm logInBtn animitionOfBtn"><a href="https://hub.archnet.online/login"><span>ورود</span></a></button>
-<button className="btn btn-sm mx-3 signInBtn animitionOfBtn"><a href="https://hub.archnet.online/register"><span>ساخت حساب کاربری </span></a></button>
+<button className="btn btn-sm logInBtn animitionOfBtn"><a href="https://hub.archnets.com/login"><span>ورود</span></a></button>
+<button className="btn btn-sm mx-3 signInBtn animitionOfBtn"><a href="https://hub.archnets.com/register"><span>ساخت حساب کاربری </span></a></button>
     </div>
   </div>
   </div>

@@ -70,7 +70,7 @@ function Main(){
        اطلاعات شما، به شما تعلق دارد</b></h2>
     <p style={{direction: "rtl"}}>خدمات رمزگذاری شده ما به شما کمک میکند تا اینترنتی بهتر در محیطی امن داشته باشید. </p>
     <div className="card-actions justify-left">
-      <button className="btn btnOfCard"><a href="https://hub.archnet.online/register">ساخت حساب کاربری</a></button>
+      <button className="btn btnOfCard"><a href="https://hub.archnets.com/register">ساخت حساب کاربری</a></button>
     </div>
   </div>
 </div>
@@ -190,7 +190,7 @@ function Main(){
             </ul>
 
             {/*<div className="card-actions justify-left">*/}
-            {/*    <button className="btn btnOfCard"><a href="https://hub.archnet.online/register">ساخت حساب کاربری</a></button>*/}
+            {/*    <button className="btn btnOfCard"><a href="https://hub.archnets.com/register">ساخت حساب کاربری</a></button>*/}
             {/*</div>*/}
         </div>
     </div>
