@@ -21,6 +21,7 @@
 @media only screen and (max-width: 1000px){
     .workPicForComp{
         display: none;
+        pointer-events: none;
     }
     .section1ofLearn{
         min-height: 145vh;
@@ -43,4 +44,10 @@
 .macApp{
     margin-left: auto;
     margin-right: auto;
+}
+.workPicForComp{
+    pointer-events: none;
+}
+.workPicForMobile{
+    pointer-events: none;
 }

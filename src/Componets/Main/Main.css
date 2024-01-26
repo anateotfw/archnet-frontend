@@ -588,3 +588,10 @@ width: 80%;
 .explainSection{
     min-height: 30vh;
 }
+
+.purpleColorForMenuItems{
+    color: #6d4aff;
+}
+.txtShadowForMEnuItem{
+    text-shadow: 0 0 6px #f7f5ff;
+}

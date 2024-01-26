@@ -159,11 +159,11 @@ function Main(){
                 <div className="lg:py-16">
                     <article className="space-y-4 text-gray-600" style={{direction: "rtl"}}>
                         <p>
-                           اولویت آرچ نت اتصال ایمن است. این اتصال امن با سرعت بالا صورت میگیرد به طوری که در هر جای کشور میتوانید آرچ نت را بدون محدودیت سرعت داشته باشید.
+                           اولویت <i className="text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-purple-300 ease-linear transition hover:hue-rotate-[90deg] duration-300" style={{fontStyle: "normal"}}> آرچ نت </i> اتصال ایمن است. این اتصال امن با سرعت بالا صورت میگیرد به طوری که در هر جای کشور میتوانید آرچ نت را بدون محدودیت سرعت داشته باشید.
                         </p>
 
                         <p>
-                            برای استفاده از آرچ نت کافی است حساب کاربری خود را بسازید، سپس وارد حساب کاربری خود شوید و برنامه مورد نظر خود را با توجه به سیستم عاملی که استفاده میکنید دانلود کنید، تمامی برنامه ها در حساب کاربری شما برای دانلود موجود است، جهت آموزش اتصال وارد قسمت آموزش وبسایت شوید. بعد از نصب برنامه از ده ها بسته اشتراکی موجود که از حجم های محدود و نامحدود تشکیل میشود یکی از آنها را انتخاب کرده و سپس در برنامه با توجه به آموزش برنامه بارگزاری کنید، بدین ترتیب شما به آرچ نت متصل شدید.
+                            برای استفاده از <i className="text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-purple-300 ease-linear transition hover:hue-rotate-[90deg] duration-300" style={{fontStyle: "normal"}}> آرچ نت </i> کافی است حساب کاربری خود را بسازید، سپس وارد حساب کاربری خود شوید و برنامه مورد نظر خود را با توجه به سیستم عاملی که استفاده میکنید دانلود کنید، تمامی برنامه ها در حساب کاربری شما برای دانلود موجود است، جهت آموزش اتصال وارد قسمت آموزش وبسایت شوید. بعد از نصب برنامه از ده ها بسته اشتراکی موجود که از حجم های محدود و نامحدود تشکیل میشود یکی از آنها را انتخاب کرده و سپس در برنامه با توجه به آموزش برنامه بارگزاری کنید، بدین ترتیب شما به آرچ نت متصل شدید.
                         </p>
                     </article>
                 </div>
@@ -178,7 +178,7 @@ function Main(){
         <figure className="textContainer">
             <img src={shopCardImg} alt="connected_world_wuay" className="shopCardImg"/>
             <div className="centered ">اشتراک نامحدود چهار کاربره<br/>
-                <h3 className="" style={{direction: "rtl"}}>255000 تومان/ ماهانه</h3>
+                <h3 className="" style={{direction: "rtl"}}>200000 تومان/ ماهانه</h3>
             </div>
         </figure>
         <div className="card-body">
@@ -204,7 +204,7 @@ function Main(){
 
             <img src={shopCardImg} alt="connected_world_wuay" className="shopCardImg"/>
             <div className="centered ">اشتراک نامحدود تک کاربره<br/>
-                <h3  style={{direction: "rtl"}}>155000 تومان/ ماهانه</h3>
+                <h3  style={{direction: "rtl"}}>150000 تومان/ ماهانه</h3>
             </div>
         </figure>
         <div className="card-body">
@@ -223,7 +223,7 @@ function Main(){
         <figure className="textContainer">
             <img src={shopCardImg} alt="connected_world_wuay" className="shopCardImg"/>
             <div className="centered ">اشتراک 5 گیگ تک کاربره<br/>
-                <h3 style={{direction: "rtl"}}>8500  تومان/ ماهانه</h3>
+                <h3 style={{direction: "rtl"}}>8000  تومان/ ماهانه</h3>
             </div>
         </figure>
         <div className="card-body">

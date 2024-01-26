@@ -49,7 +49,7 @@ function TestSubscription(){
 
                                 {/*<h2 className="mt-4 text-xl font-bold " style={{direction: "rtl"}}>نصب برنامه</h2>*/}
                                 <p  className="mt-1 text-sm" style={{direction: "rtl"}}>
-                                    برای استفاده از اشتراک تست در هر پلتفرمی میتوانید به قسمت   <a className="LearnLink" href="/Learning">آموزش</a> مراجعه کنید.
+                                    برای استفاده از اشتراک تست در هر پلتفرمی میتوانید به قسمت   <a className="LearnLink" href="/Tutorial">آموزش</a> مراجعه کنید.
 
 
                                 </p>

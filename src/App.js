@@ -33,6 +33,7 @@ import NekoboxForAndroid from "./Componets/Apps/Android/NekoboxForAndroid";
 
 import Tutorial from "./Componets/otherPages/Learn/Tutorial";
 import ShadowRocketMac from "./Componets/Apps/Mac/ShadowRocketMac";
+import HiddifyNextForMac from "./Componets/Apps/Mac/HiddifyNextForMac";
 
 function App() {
  return(
@@ -67,6 +68,7 @@ function App() {
     <Route path="TestSubscription" element={<TestSubscription/>}/>
     <Route path="FAQs" element={<FAQs/>}/>
     <Route path="ShadowRocketMac" element={<ShadowRocketMac/>}/>
+<Route path="HiddifyNextForMac" element={<HiddifyNextForMac/>}/>
 </Route>
 </Routes>
     </ScrollFromTop>
