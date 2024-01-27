@@ -246,8 +246,8 @@ const Subscription=()=>{
                             </div>
                         </div>
 
-                        <div className="chat-bubble chatCard text-center text-sm font-medium">بسته های اشتراکی بیشتر در  <a  className="inline-block underline" href="https://hub.archnet.online/register">
-                            ArchNet
+                        <div className="chat-bubble chatCard text-center text-sm font-medium">بسته های اشتراکی بیشتر در   <a  className="inline-block " href="https://hub.archnets.com/register">
+                            <i className="text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-purple-300 ease-linear transition hover:hue-rotate-[90deg] duration-300" style={{fontStyle: "normal"}}> ArchNet </i>
                         </a></div>
                     </div>
                 </div>
