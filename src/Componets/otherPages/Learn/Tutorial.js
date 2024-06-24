@@ -324,7 +324,7 @@ const Tutorial=()=>{
                                 <Link to="/SingboxIOS">
                                 <img src={SingboxIOS} className="sizeOfIcon" alt="Singbox"/>
 
-                                <h2 className="mt-4 text-2xl font-bold text-black">Sing-Box (پیشنهادی)</h2>
+                                <h2 className="mt-4 text-2xl font-bold text-black">Sing Box (پیشنهادی)</h2>
 
                                 <p className="mt-1 text-xl text-black" style={{direction: "rtl"}}>
                                     برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه SingBox روی این آموزش کلیک کنید.
