@@ -24,16 +24,17 @@ import NekorayForLinux from "./Componets/Apps/Linux/NekorayForLinux";
 import StreisandForIos from "./Componets/Apps/Ios/StreisandForIos";
 import StreisandForMac from "./Componets/Apps/Mac/StreisandForMac";
 import ScrollFromTop from "./Componets/Main/ScrollFromTop";
-import BasicTraining from "./Componets/BasisTraining /BasicTraining";
-import LinkChanging from "./Componets/BasisTraining /LinkChanging";
-import ConnectToRobot from "./Componets/BasisTraining /ConnectToRobot";
-import TestSubscription from "./Componets/BasisTraining /TestSubscription";
+import BasicTraining from "./Componets/BasisTraining/BasicTraining";
+import LinkChanging from "./Componets/BasisTraining/LinkChanging";
+import ConnectToRobot from "./Componets/BasisTraining/ConnectToRobot";
+import TestSubscription from "./Componets/BasisTraining/TestSubscription";
 import FAQs from "./Componets/Apps/FAQs/FAQs";
 import NekoboxForAndroid from "./Componets/Apps/Android/NekoboxForAndroid";
 
 import Tutorial from "./Componets/otherPages/Learn/Tutorial";
 import ShadowRocketMac from "./Componets/Apps/Mac/ShadowRocketMac";
 import HiddifyNextForMac from "./Componets/Apps/Mac/HiddifyNextForMac";
+import SingboxIOS from "./Componets/Apps/Ios/SingBoxForIOS";
 
 function App() {
  return(
@@ -51,6 +52,7 @@ function App() {
     <Route path="NekoboxForAndroid" element={<NekoboxForAndroid/>}/>
     <Route path="ShadowForIos" element={<ShadowForIos/>}/>
     <Route path="FoxrayForIos" element={<FoxrayForIos/>}/>
+    <Route path="SingboxIOS" element={<SingboxIOS/>}/>
     <Route path="V2boxForIos" element={<V2boxForIos/>}/>
     <Route path="V2rayForWindows" element={<V2rayForWindows/>}/>
     <Route path="ClashMetaForWindows" element={<ClashMetaForWindows/>}/>

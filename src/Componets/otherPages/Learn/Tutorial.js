@@ -32,6 +32,7 @@ import streisand from "./../../../images/streisand2.webp";
 import Nekobox from "./../../../images/NekoboxAndroid.png";
 import ShadowRocketMac from "./../../../images/shadowRocketiconMac.png"
 import hiddifyNextMac from "./../../../images/hiddifyNextMac.webp";
+import SingboxIOS from "../../../images/Sing-box-IOS/logo.png";
 
 const Tutorial=()=>{
     useEffect(()=>
@@ -317,7 +318,19 @@ const Tutorial=()=>{
 
 
 
+                            <a
+                                className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
+                            >
+                                <Link to="/SingboxIOS">
+                                <img src={SingboxIOS} className="sizeOfIcon" alt="Singbox"/>
 
+                                <h2 className="mt-4 text-2xl font-bold text-black">Sing-Box (پیشنهادی)</h2>
+
+                                <p className="mt-1 text-xl text-black" style={{direction: "rtl"}}>
+                                    برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه SingBox روی این آموزش کلیک کنید.
+                                </p>
+                                </Link>
+                            </a>            
 
 
                             <a

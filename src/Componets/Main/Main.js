@@ -178,7 +178,7 @@ function Main(){
         <figure className="textContainer">
             <img src={shopCardImg} alt="connected_world_wuay" className="shopCardImg"/>
             <div className="centered ">اشتراک نامحدود چهار کاربره<br/>
-                <h3 className="" style={{direction: "rtl"}}>200000 تومان/ ماهانه</h3>
+                <h3 className="" style={{direction: "rtl"}}>290000 تومان/ ماهانه</h3>
             </div>
         </figure>
         <div className="card-body">
@@ -204,7 +204,7 @@ function Main(){
 
             <img src={shopCardImg} alt="connected_world_wuay" className="shopCardImg"/>
             <div className="centered ">اشتراک نامحدود تک کاربره<br/>
-                <h3  style={{direction: "rtl"}}>150000 تومان/ ماهانه</h3>
+                <h3  style={{direction: "rtl"}}>200000 تومان/ ماهانه</h3>
             </div>
         </figure>
         <div className="card-body">
@@ -223,7 +223,7 @@ function Main(){
         <figure className="textContainer">
             <img src={shopCardImg} alt="connected_world_wuay" className="shopCardImg"/>
             <div className="centered ">اشتراک 5 گیگ تک کاربره<br/>
-                <h3 style={{direction: "rtl"}}>8000  تومان/ ماهانه</h3>
+                <h3 style={{direction: "rtl"}}>10000  تومان/ ماهانه</h3>
             </div>
         </figure>
         <div className="card-body">
