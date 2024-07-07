@@ -2,10 +2,13 @@
 
 ### Todo List
 - [ ] update clash meta
+    - There is a misconfiguration in the Clash Meta YAML file. Please, ali, don't forget to fix this bug before updating the tutorial.
 - [ ] Add APN configuration (help needed)
-  - [ ] convert apn.archnets.com to this somehow
+  - convert apn.archnets.com to this somehow
 - [ ] Update manifest.json
-- [ ] Update prices (consider making them dynamic by fetching from an API)
+    -  i think it's important for some broswers
+- [ ] Update prices 
+  - consider making them dynamic by fetching from an API *help :(* 
 - [ ] Change HiddifyNG to Hiddify and create a new tutorial
 - [ ] Change Nekobox to HSUI
 - [ ] Update Windows Hiddify
