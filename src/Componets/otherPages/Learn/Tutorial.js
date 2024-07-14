@@ -13,7 +13,7 @@ import shadowrocket from "./../../../images/shadowrocket.webp";
 import v2box from "./../../../images/v2box.jpg";
 import foxray from "./../../../images/foxray.jpg";
 import Nekoray from "./../../../images/Nekoray.webp";
-import clashverge from "./../../../images/clashVerge.webp";
+import clashverge from "./../../../images/Clash-Verge-Windows/icon.png";
 import workSystem from "./../../../images/work.svg";
 import workSystem2 from "./../../../images/work2.svg";
 import workSystem3 from "./../../../images/work5.svg";

@@ -1,4 +1,8 @@
 import React from "react";
+
+import stepLinkClashWindows from "../../../images/Clash-Verge-Windows/0.webp";
+import stepLangClashWindows from "../../../images/Clash-Verge-Windows/lang.webp";
+import stepLang2ClashWindows from "../../../images/Clash-Verge-Windows/lang2.webp";
 import step1ClashWindows from "../../../images/Clash-Verge-Windows/1.webp";
 import step2ClashWindows from "../../../images/Clash-Verge-Windows/2.webp";
 import step3ClashWindows from "../../../images/Clash-Verge-Windows/3.webp";
@@ -8,8 +12,7 @@ import step6ClashWindows from "../../../images/Clash-Verge-Windows/6.webp";
 import step7ClashWindows from "../../../images/Clash-Verge-Windows/7.webp";
 import step8ClashWindows from "../../../images/Clash-Verge-Windows/8.webp";
 import step9ClashWindows from "../../../images/Clash-Verge-Windows/9.webp";
-import step10ClashWindows from "../../../images/Clash-Verge-Windows/10.webp";
-import clashVerge from "../../../images/clashVerge.webp";
+import clashVerge from "../../../images/Clash-Verge-Windows/icon.png";
 
 
 function ClashMetaForWindows(){
@@ -35,7 +38,7 @@ function ClashMetaForWindows(){
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <h1 className="colorOfSteps">1</h1>
-                                <img src={step1ClashWindows}/>
+                                <img src={stepLinkClashWindows}/>
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>ورود به پنل کاربری</h2>
 
@@ -50,11 +53,11 @@ function ClashMetaForWindows(){
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <h1 className="colorOfSteps">2</h1>
-                                <img src={step2ClashWindows}/>
+                                <img src={stepLangClashWindows}/>
 
-                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>اجرای برنامه</h2>
+                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>تغییر زبان به انگلیسی</h2>
                                 <p  className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                 پس از نصب،‌ برنامه را اجرا کرده و بر روی گزینه Settings کلیک کنید.
+                                بر روی قسمت هایلایت شده بزنید تا وارد بخش تنظیمات برنامه بشید.
 
                                 </p>
 
@@ -64,11 +67,11 @@ function ClashMetaForWindows(){
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <h1 className="colorOfSteps">3</h1>
-                                <img src={step3ClashWindows}/>
+                                <img src={stepLang2ClashWindows}/>
 
-                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>تنظیمات </h2>
+                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>تغییر زبان به انگلیسی</h2>
                                 <p  className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                    در صفحه تنظیمات گزینه Service Mode را فعال کنید.
+                                بر روی قسمت هایلایت شده بزنید و گزینه English را انتخاب کنید تا زبان برنامه به انگلیسی تغییر کند.
 
                                 </p>
 
@@ -78,11 +81,11 @@ function ClashMetaForWindows(){
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <h1 className="colorOfSteps">4</h1>
-                                <img src={step4ClashWindows}/>
+                                <img src={step1ClashWindows}/>
 
-                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>تنظیمات</h2>
+                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>بارگزاری اشتراک</h2>
                                 <p  className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                   همانطور که مشاهده میکنید پس از فعال کردن آن پنجره ای به این شکل باز میشود و حالت Installed را نمایش میدهد.
+                                در این بخش بر روی گزینه NEW بزنید.
 
                                 </p>
 
@@ -92,11 +95,11 @@ function ClashMetaForWindows(){
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <h1 className="colorOfSteps">5</h1>
-                                <img src={step5ClashWindows}/>
+                                <img src={step2ClashWindows}/>
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>تنظیمات</h2>
                                 <p  className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                   در صفحه Settings و در بخش Clash Setting گزینه Clash Core را انتخاب کنید.
+                                در قسمت Name لطفا یک نام وارد کنید و در قسمت Subscription URL حتما لینک اشتراکتون که مرحله اول کپی کردید را بارگزاری کنید و قسمت Update Interval هم عدد 3000 را وارد کنید.
 
                                 </p>
 
@@ -106,11 +109,11 @@ function ClashMetaForWindows(){
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <h1 className="colorOfSteps">6</h1>
-                                <img src={step6ClashWindows}/>
+                                <img src={step3ClashWindows}/>
 
-                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>تنظیمات بیشتر</h2>
+                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>دانلود فایل ها</h2>
                                 <p  className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                   در پنجره باز شده گزینه Clash Meta را انتخاب کنید. همانطور که مشاهده میکنید پیغام Successfully در گوشه صفحه نمایان میشود.
+                                در این مرحله حتما روی کادر هایلایت شده بزنید تا فایل های مورد نیاز از سمت آرچ نت دانلود شود.
 
                                 </p>
 
@@ -121,11 +124,11 @@ function ClashMetaForWindows(){
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <h1 className="colorOfSteps">7</h1>
-                                <img src={step7ClashWindows}/>
+                                <img src={step4ClashWindows}/>
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>تنظیمات برنامه</h2>
                                 <p  className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                    در صفحه Setting در بخش System Setting دو گزینه Tun Mode و Service Mode را فعال کنید.
+                                در بخش Service Mode بر روی *سپر علامت تعجب دار* کلیک کنید.
 
                                 </p>
 
@@ -137,11 +140,11 @@ function ClashMetaForWindows(){
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <h1 className="colorOfSteps">8</h1>
-                                <img src={step8ClashWindows}/>
+                                <img src={step5ClashWindows}/>
 
-                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>بارگزاری  </h2>
+                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>سرویس مود</h2>
                                 <p  className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                   در صفحه Profiles در محل مشخص شده لینک اشتراک خود که قبلا از پنل خود کپی کرده اید را بارگزاری کنید و بر روی گزینه Import کلیک کنید.
+                                در این کادر روی دکمه INSTALL بزنید و بزارید نصب شود.
 
                                 </p>
 
@@ -153,33 +156,56 @@ function ClashMetaForWindows(){
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <h1 className="colorOfSteps">9</h1>
-                                <img src={step9ClashWindows}/>
+                                <img src={step6ClashWindows}/>
 
-                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>اتصال به آرچ نت </h2>
+                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>اتصال به آرچ نت</h2>
                                 <p  className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                    پس از بارگزاری، اشتراک شما در صفحه Profiles که بارگزاری شده است قابل مشاهده هست بر روی آن کلیک کنید و سپس گزینه Allow access را در پنجره باز شده انتخاب کنید.
+                                در این بخش تیک Tun Mode و Service Mode را بزنید تا سرویس آرچ نت فعال شود.
 
                                 </p>
 
                             </a>
-
-
 
                             <a
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <h1 className="colorOfSteps">10</h1>
-                                <img src={step10ClashWindows}/>
+                                <img src={step7ClashWindows}/>
 
-                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>سرور ها </h2>
+                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>سرویس ویندوز</h2>
                                 <p  className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                   جهت مشاهده و همچنین انتخاب سرور ها، به صفحه Proxies رفته و سرور مدنظر خود را انتخاب کنید تا برنامه با اتصال به آن متصل باشد.
+                                این بخش فقط برای سیستم عامل ویندوز میباشد و در بخش Settings روی Open UWP tool بزنید و در کادر جدید روی Exempt All و در نهایت Save Changes بزنید.  ( این مورد فقط برای حالت پراکسی میباشد)
 
                                 </p>
 
                             </a>
 
+                            <a
+                                className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
+                            >
+                                <h1 className="colorOfSteps">11</h1>
+                                <img src={step8ClashWindows}/>
 
+                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>انتخاب سرور</h2>
+                                <p  className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
+                                وارد بخش Proxies شوید و روی جایی که با فلش مشخص شده بزنید تا همه سرور ها نمایش داده شوند.
+
+                                </p>
+
+                            </a>
+
+                            <a
+                                className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
+                            >
+                                <h1 className="colorOfSteps">12</h1>
+                                <img src={step9ClashWindows}/>
+
+                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>انتخاب سرور مورد نظر</h2>
+                                <p  className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
+                                در این بخش با زدن روی ایکون وایفای در بالا سمت چپ میتوانید از سرور ها پینگ بگیرید ( شناسایی اتصال به سیستم شما ) و با انتخاب کردن کشور موردنظر وصل خواهید شد.
+                                </p>
+
+                            </a>
                         </div>
 
                         <div className="mt-12 text-center">
