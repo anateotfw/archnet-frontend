@@ -1,7 +1,7 @@
 # archnet frontend ( best website design in the world)
 
 ### Todo List
-- [ ] update clash meta
+- [x] update clash meta
     - There is a misconfiguration in the Clash Meta YAML file. Please, ali, don't forget to fix this bug before updating the tutorial.
 - [ ] Add APN configuration (help needed)
   - convert apn.archnets.com to this somehow
