@@ -101,7 +101,7 @@ function HiddifyForWindows(){
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>حالت VPN</h2>
                                 <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                برای وصل کردن کل سیستم به این سرویس لطفا اتبدا روی ایکون هایلایت شده در بالا سمت راست کلیک کنید سپس بر روی حالت VPN Service قرار دهید. چنانچه همچنان کار نکرد لطفا برنامه را به حالت Run as administrator اجرا کنید سپس بر روی حالت VPN قرار دهید.
+                                برای وصل کردن کل سیستم به این سرویس لطفا ابتدا روی ایکون هایلایت شده در بالا سمت راست کلیک کنید سپس بر روی حالت VPN Service قرار دهید. چنانچه همچنان کار نکرد لطفا برنامه را به حالت Run as administrator اجرا کنید سپس بر روی حالت VPN قرار دهید.
                                 </p>
 
                             </a>
