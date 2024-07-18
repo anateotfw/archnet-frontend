@@ -1,13 +1,12 @@
 import React from "react";
-import step1HiddifyAndroid from "../../../images/HiddifyNG/1.webp";
-import step2HiddifyAndroid from "../../../images/HiddifyNG/2.webp";
-import step3HiddifyAndroid from "../../../images/HiddifyNG/3.webp";
-import step4HiddifyAndroid from "../../../images/HiddifyNG/4.webp";
-import step5HiddifyAndroid from "../../../images/HiddifyNG/5.webp";
-import step6HiddifyAndroid from "../../../images/HiddifyNG/6.webp";
-import step7HiddifyAndroid from "../../../images/HiddifyNG/7.webp";
+import step1HiddifyAndroid from "../../../images/HiddifyNext/1.webp";
+import step2HiddifyAndroid from "../../../images/HiddifyNext/2.webp";
+import step3HiddifyAndroid from "../../../images/HiddifyNext/3.webp";
+import step4HiddifyAndroid from "../../../images/HiddifyNext/4.webp";
+import step5HiddifyAndroid from "../../../images/HiddifyNext/5.webp";
+import step6HiddifyAndroid from "../../../images/HiddifyNext/6.webp";
 import "./Android.css";
-import HiddifyAndroid from "../../../images/hiddify.webp";
+import HiddifyAndroid from "../../../images/HiddifyNext/hiddify.webp";
 function HiddifyForAndroid(){
     return(
         <>
@@ -19,7 +18,7 @@ function HiddifyForAndroid(){
                         <div className="mt-12 text-center">
 
 
-                            <h1> HiddifyNG آموزش فعال سازی  <i className="text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-purple-300 ease-linear transition hover:hue-rotate-[90deg] duration-300" style={{fontStyle: "normal"}}> آرچ نت </i> با برنامه </h1>
+                            <h1> HiddifyNext آموزش فعال سازی  <i className="text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-purple-300 ease-linear transition hover:hue-rotate-[90deg] duration-300" style={{fontStyle: "normal"}}> آرچ نت </i> با برنامه </h1>
                         </div>
                         <div className="mx-auto max-w-lg text-center">
 
@@ -36,7 +35,7 @@ function HiddifyForAndroid(){
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>دانلود برنامه</h2>
 
                                 <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                    ابتدا وارد حساب کاربری خود شوید و در بخش نرم افزار ها ابتدا Android و سپس HiddifyNG را انتخاب کنید، با استفاده از دکمه دانلود برنامه را دانلود و سپس در گوشی خود نصب کنید. توجه کنید که حتما باید لینک اتصال را در قسمن "کپی کردن لینک اتصال" را کپی کرده باشید.
+                                    ابتدا وارد حساب کاربری خود شوید و در بخش نرم افزار ها ابتدا Android و سپس HiddifyNext را انتخاب کنید، با استفاده از دکمه دانلود برنامه را دانلود و سپس در گوشی خود نصب کنید. توجه کنید که حتما باید لینک اتصال را در قسمت "کپی کردن لینک اتصال" را کپی کرده باشید.
                                 </p>
                             </a>
 
@@ -50,7 +49,7 @@ function HiddifyForAndroid(){
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>ورود به برنامه</h2>
 
                                 <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                   پس از نصب وارد برنامه شوید. در قسمت اتصال فوری بر روی نماد " +جدید" کلیک کنید.
+                                پس از نصب وارد برنامه شوید سپس در قسمت خانه "Home" بر روی دکمه وسط "+ New Proilfe" بزنید.
                                 </p>
                             </a>
 
@@ -73,10 +72,10 @@ function HiddifyForAndroid(){
                                 <h1 className="colorOfSteps">4</h1>
                                 <img src={step4HiddifyAndroid}/>
 
-                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>تنظیمات</h2>
+                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>فعال سازی</h2>
 
                                 <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                  بعد از بارگزاری اشتراک در منوی قسمت پایین برنامه وارد قسمت "پیشرفته" شوید.
+                                برای اتصال، لطفا روی دکمه وسط بزنید.
                                 </p>
                             </a>
 
@@ -86,10 +85,10 @@ function HiddifyForAndroid(){
                                 <h1 className="colorOfSteps">5</h1>
                                 <img src={step5HiddifyAndroid}/>
 
-                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>تنظیمات پیشرفته</h2>
+                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>انتخاب سرور</h2>
 
                                 <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                    در قسمت پیشرفته حالت اتصال را به "دستی" تفییر دهید.
+                                اتصال شما به سرور ها برقرار شد و برای انتخاب سرور و تغییر لوکیشن بر روی "Proxies" بزنید.
                                 </p>
                             </a>
 
@@ -99,25 +98,13 @@ function HiddifyForAndroid(){
                                 <h1 className="colorOfSteps">6</h1>
                                 <img src={step6HiddifyAndroid}/>
 
-                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>اتصال </h2>
+                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>انتخاب سرور جدید</h2>
 
                                 <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                   پس از تنظیمات، وارد قسمت کانفیگ ها شوید. سرور مورد نظر خود را انتخاب کنید و بر روی گرینه متصل کلیک کنید.
+                                در این قسمت میتوانید با زدن بر روی ایکون هایلایت شده اتصال خود به سرور ها را بررسی کنید سپس لوکیشن مورد نظر را انتخاب کنید.
                                 </p>
                             </a>
 
-                            <a
-                                className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
-                            >
-                                <h1 className="colorOfSteps">7</h1>
-                                <img src={step7HiddifyAndroid}/>
-
-                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>آپدیت</h2>
-
-                                <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                   جهت آپدیت برنامه بر روی نماد نشان داده شده در قسمت اتصال فوری کلیک کنید. بدین ترتیب اشتراک شما آپدیت شده و آخرین تغییرات سرور ها را دریافت میکنید.
-                                </p>
-                            </a>
                         </div>
 
                         <div className="mt-12 text-center">

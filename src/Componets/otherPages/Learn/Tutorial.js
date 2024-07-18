@@ -214,7 +214,7 @@ const Tutorial=()=>{
                                     <Link to="/HiddifyForAndroid">
                                    <img src={hiddify} className="sizeOfIcon" alt="hiddify"/>
 
-                                    <h2 className="mt-4 text-2xl font-bold text-white">HiddifyNG</h2>
+                                    <h2 className="mt-4 text-2xl font-bold text-white">HiddifyNext</h2>
 
                                     <p className="mt-1 text-xl text-gray-300" style={{direction: "rtl"}}>
                                         برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه Hiddify روی این آموزش کلیک کنید.
@@ -450,7 +450,7 @@ const Tutorial=()=>{
                                 <Link to="/HiddifyForWindows">
                                 <img src={hiddify} className="sizeOfIcon" alt="hiddify"/>
 
-                                <h2 className="mt-4 text-2xl font-bold text-white">Hiddify</h2>
+                                <h2 className="mt-4 text-2xl font-bold text-white">Hiddify Next</h2>
 
                                 <p className="mt-1 text-xl text-gray-300" style={{direction: "rtl"}}>
                                     برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه Hiddify روی این آموزش کلیک کنید.
