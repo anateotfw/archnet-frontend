@@ -4,38 +4,40 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useEffect } from "react";
 import pic from "./../../images/pic copy.png";
-import archImg from "./../../images/arch.webp";
-import picOfBus from "./../../images/undraw_co-working_re_w93t.svg";
-import archFont from "./../../images/archFont.webp";
+// import archImg from "./../../images/arch.webp";
+// import picOfBus from "./../../images/undraw_co-working_re_w93t.svg";
+// import archFont from "./../../images/archFont.webp";
 import LogoNothing from "./../../images/Logo(Nothing) (1).png";
-import picOfCard1 from "./../../images/undraw_devices_re_dxae (1).svg";
-import picOfCard2 from "./../../images/undraw_security_on_re_e491 (1).svg";
+// import picOfCard1 from "./../../images/undraw_devices_re_dxae (1).svg";
+// import picOfCard2 from "./../../images/undraw_security_on_re_e491 (1).svg";
 
-import iran from "./../../images/iran.jpg";
+// import iran from "./../../images/iran.jpg";
 // import a from "./../../../SomePics/a.jpg";
 // import b from "./../../../SomePics/b.jpg";
 // import c from "./../../../SomePics/c.jpg";
 // import d from "./../../../SomePics/d.jpg";
 // import e from "./../../../SomePics/e.jpg";
 // import f from "./../../../SomePics/f.jpg";
-import picOfsection3 from "./../../images/undraw_voice_assistant_nrv7.svg";
+// import picOfsection3 from "./../../images/undraw_voice_assistant_nrv7.svg";
 import device from "./../../images/Macbook Pro - Copy@10-1440x708 (3).jpg"
 import busPic1 from "./../../images/Room - Girl Working - Copy@10-1440x849.webp"
 import device2 from "./../../images/Macbook Pro - Copy - Copy@5-428x926.jpg";
 import busPic2 from "./../../images/Room - Relaxing - Copy@10-1440x708.jpg";
-import linux from "./../../images/icons8-linux-24 (1).png";
+// import linux from "./../../images/icons8-linux-24 (1).png";
 import {Link} from "react-router-dom";
-import iranPic from "./../../images/iran.jpg";
+// import iranPic from "./../../images/iran.jpg";
 import shopCardImg from "./../../images/undraw_connected_world_wuay.svg";
 import secPic from "./../../images/undraw_two_factor_authentication_namy (1).svg";
 import secPicForMobile from "./../../images/undraw_fingerprint_re_uf3f.svg";
 
-import ctaline from "./../../images/cta-line.png";
+// import ctaline from "./../../images/cta-line.png";
+import Globe from '../Globe/Globe'
+
 function Main(){
-      const sizeOfPics ={
-    width: "420px",
-    height: "400px"
-  }
+  // const sizeOfPics ={
+  //   width: "420px",
+  //   height: "400px"
+  // }
   const sixeOfarchImg = {
     width: "80px",
     height: "80px"
@@ -61,16 +63,33 @@ function Main(){
 
 
 
-  <div className="card w-96 cardSection1">
-  {/* <figure><img src={picOfServer} alt="car!"/></figure> */}
+  <div className="card w-96 cardSection1" role="article">
   <div className="card-body">
+    <h2 className="card-title" style={{direction: "rtl"}}>
+      <span className="flex items-center gap-2">
+        با
+        <span 
+          className="text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-purple-300 ease-linear transition hover:hue-rotate-[90deg] duration-300"
+        >
+          آرچ نت
+        </span>
+        اطلاعات شما، به شما تعلق دارد
+      </span>
+    </h2>
 
-    <h2 className="card-title" style={{direction: "rtl"}}><b>با
-    <i className="text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-purple-300 ease-linear transition hover:hue-rotate-[90deg] duration-300" style={{fontStyle: "normal"}}> آرچ نت </i>
-       اطلاعات شما، به شما تعلق دارد</b></h2>
-    <p style={{direction: "rtl"}}>خدمات رمزگذاری شده ما به شما کمک میکند تا اینترنتی بهتر در محیطی امن داشته باشید. </p>
-    <div className="card-actions justify-left">
-      <button className="btn btnOfCard"><a href="https://hub.archnets.com/register">ساخت حساب کاربری</a></button>
+    <p className="mt-4" style={{direction: "rtl"}}>
+      خدمات رمزگذاری شده ما به شما کمک میکند تا اینترنتی بهتر در محیطی امن داشته باشید.
+    </p>
+
+    <div className="card-actions justify-left mt-6">
+      <a 
+        href="https://hub.archnets.com/register"
+        className="btn btnOfCard"
+        role="button"
+        aria-label="ساخت حساب کاربری"
+      >
+        ساخت حساب کاربری
+      </a>
     </div>
   </div>
 </div>
@@ -149,11 +168,7 @@ function Main(){
 
             <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
                 <div className="relative h-64 overflow-hidden sm:h-80 lg:h-full">
-                    <img
-                        alt="iranPicture"
-                        src={iranPic}
-                        className="absolute inset-0 h-full w-full object-cover" style={{direction: "rtl"}}
-                    />
+                    <Globe />
                 </div>
 
                 <div className="lg:py-16">
@@ -254,11 +269,10 @@ function Main(){
 
                     <div className="card w-96 bg-base-100  cardBetweenS2-3 cardBottom ">
                         <div className="card-body">
-
-                            <h2 className="card-title"></h2>
-                            <p style={{direction: "rtl", textAlign: "center"}}><i className="text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-purple-300 ease-linear transition hover:hue-rotate-[90deg] duration-300" style={{fontStyle: "normal"}}> آرچ نت </i>    حریم خصوصی است که میتوانید به آن اعتماد کنید.
-                            از هدف های ما ایجاد پروتکل های امن است که در آن حریم خصوصی شما حفظ شود. ما معتقدیم که هیچ کس نباید بتواند از داده های شما سوء استفاده کند؛ فناوری و تجارت ما بر اساس این تعریف اساسی از حریم خصوصی است.
-
+                            <p style={{direction: "rtl", textAlign: "center"}}>
+                                <i className="text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-purple-300 ease-linear transition hover:hue-rotate-[90deg] duration-300" style={{fontStyle: "normal"}}> آرچ نت </i>    
+                                حریم خصوصی است که میتوانید به آن اعتماد کنید.
+                                از هدف های ما ایجاد پروتکل های امن است که در آن حریم خصوصی شما حفظ شود. ما معتقدیم که هیچ کس نباید بتواند از داده های شما سوء استفاده کند؛ فناوری و تجارت ما بر اساس این تعریف اساسی از حریم خصوصی است.
                             </p>
                             <div className="card-actions justify-end">
 
@@ -271,9 +285,10 @@ function Main(){
 
                     <div className="card w-96 bg-base-100  cardRight cardBottom cardBetweenS2-3  ">
                         <div className="card-body">
-                            <h2 className="card-title"></h2>
-                            <p><img src={secPic} className="secPicForComp" alt="securityPicture"/>
-                                <img src={secPicForMobile} className="secPicForMobile" alt="securityPicture"/></p>
+                            <p>
+                                <img src={secPic} className="secPicForComp" alt="securityPicture"/>
+                                <img src={secPicForMobile} className="secPicForMobile" alt="securityPicture"/>
+                            </p>
                             <div className="card-actions justify-end">
 
                             </div>
@@ -285,8 +300,9 @@ function Main(){
 
                     <div className="card w-96 bg-base-100 cardBetweenS2-3">
                         <div className="card-body">
-                            <h2 className="card-title"></h2>
-                            <p style={{direction: "rtl", textAlign: "center"}}>بسته های اشتراکی ما به دو صورت محدود و نامحدود تک کاربره، دو کاربره، سه کاربره و چهار کاربر ارائه میشود. همه بسته ها دارای مدت زمان ۳۰ روز تا یکسال هستند. همچنین هر هفته در کانال ما مسابقه ای برای بسته های رایگان بین اعضای کانال صورت میگیرد.</p>
+                            <p style={{direction: "rtl", textAlign: "center"}}>
+                                بسته های اشتراکی ما به دو صورت محدود و نامحدود تک کاربره، دو کاربره، سه کاربره و چهار کاربر ارائه میشود. همه بسته ها دارای مدت زمان ۳۰ روز تا یکسال هستند. همچنین هر هفته در کانال ما مسابقه ای برای بسته های رایگان بین اعضای کانال صورت میگیرد.
+                            </p>
                             <div className="card-actions justify-end">
 
                             </div>
@@ -310,8 +326,8 @@ function Main(){
 
     <span className="footer-title">خدمات</span>
     <a className="link link-hover" href="/Subscription">خرید اشتراک</a>
-    <a className="link link-hover" href="http://speedtest.archnet-cloud.com/">تست سرعت</a>
-   <a className="link link-hover" href="http://status.archnet.online:8008/">سرور ها</a>
+    <a className="link link-hover" href="https://apn.archnets.com/">آیفون APN تنظیمات</a>
+   {/* <a className="link link-hover" href="http://status.archnet.online:8008/">سرور ها</a> */}
 
 {/* Put this part before </body> tag */}
 <input type="checkbox" id="my-modal-3" className="modal-toggle" />

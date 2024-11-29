@@ -1,24 +1,36 @@
 {
   "name": "archnet",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "dependencies": {
+    "@react-three/drei": "^9.117.3",
+    "@react-three/fiber": "^8.17.10",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.0",
-    "daisyui": "^2.51.6",
-    "gsap": "^3.11.5",
+    "compression": "^1.7.5",
+    "daisyui": "^3.9.0",
+    "gsap": "^3.12.2",
+    "helmet": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-error-boundary": "^4.1.2",
+    "react-globe.gl": "^2.27.6",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "three": "^0.170.0",
+    "web-vitals": "^2.1.4",
+    "serve": "^14.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
+    "serve": "serve -s build -l 3000",
+    "build:analyze": "source-map-explorer 'build/static/js/*.js'",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
   },
   "eslintConfig": {
     "extends": [
@@ -30,7 +42,8 @@
     "production": [
       ">0.2%",
       "not dead",
-      "not op_mini all"
+      "not op_mini all",
+      "not ie 11"
     ],
     "development": [
       "last 1 chrome version",
@@ -39,7 +52,13 @@
     ]
   },
   "devDependencies": {
-    "react-router-dom": "^6.11.2",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.16",
+    "cross-env": "^7.0.3",
+    "eslint-config-prettier": "^9.1.0",
+    "postcss": "^8.4.30",
+    "prettier": "^3.4.1",
+    "react-router-dom": "^6.16.0",
     "tailwindcss": "^3.3.2"
   }
 }

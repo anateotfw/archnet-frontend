@@ -4,14 +4,6 @@ import step2V2rayAndroid from "../../../images/v2rayng/2.webp";
 import step3V2rayAndroid from "../../../images/v2rayng/3.webp";
 import step4V2rayAndroid from "../../../images/v2rayng/4.webp";
 import step5V2rayAndroid from "../../../images/v2rayng/5.webp";
-import step6V2rayAndroid from "../../../images/v2rayng/6.webp";
-import step7V2rayAndroid from "../../../images/v2rayng/7.webp";
-import step8V2rayAndroid from "../../../images/v2rayng/8.webp";
-import step9V2rayAndroid from "../../../images/v2rayng/9.webp";
-import step10V2rayAndroid from "../../../images/v2rayng/10.webp";
-import step11V2rayAndroid from "../../../images/v2rayng/10.webp";
-import step12V2rayAndroid from "../../../images/v2rayng/11.webp";
-import step13V2rayAndroid from "../../../images/v2rayng/13.webp";
 import step14V2rayAndroid from "../../../images/v2rayng/14.webp";
 import step15V2rayAndroid from "../../../images/v2rayng/15.webp";
 import step16V2rayAndroid from "../../../images/v2rayng/16.webp";
@@ -64,7 +56,7 @@ function V2rayForAndroid(){
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>ورود به برنامه</h2>
 
                                 <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                    پس از نصب وارد برنامه شوید و جهت بارگزاری اشتراک بر روی قسمت منوی برنامه که سمت چپ وجود دارد کلیک کنید.
+                                    پس از نصب وارد برنامه شوید و جهت بارگزاری اشتراک بر روی ایکون + بزنید.
 
                                 </p>
                             </a>
@@ -78,7 +70,7 @@ function V2rayForAndroid(){
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>محل بارگزاری </h2>
 
                                 <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                    پس از انتخاب منوی سمت چپ این منو برای شما باز خواهد شد،‌ در این قسمت گزینه Subscription group setting را انتخاب کنید.
+                                    در این قسمت بر روی گزینه Import Config from Clipboard بزنید.
 
                                 </p>
                             </a>
@@ -92,46 +84,20 @@ function V2rayForAndroid(){
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>صفحه بارگزاری اشتراک</h2>
 
                                 <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                    در صفحه Subscription group setting بر روی نماد مشخص شده کلیک کنید.
+                                 پس از بارگزاری موفق، بر روی بخش Arch Net کلیک کنید و یکی از کافنیگ ها را انتخاب کنید.
                                 </p>
                             </a>
 
                             <a
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
-                                <h1 className="colorOfSteps">5</h1>
+                                <h1 className="colorOfSteps">5(اتمام)</h1>
                                 <img src={step5V2rayAndroid}/>
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>بارگزاری لینک اتصال</h2>
 
                                 <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                    در صفحه باز شده در قسمت remarks نام دلخواه خود را درج کنید، در قسمت Optional URL لینک اتصال خود را که از قبل کپی کرده اید را درج کنید. سپس در آخر جهت ذخیره بر روی نماد مشخص شده بالا گوشه سمت راست کلیک کنید
-                                </p>
-                            </a>
-
-                            <a
-                                className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
-                            >
-                                <h1 className="colorOfSteps">6</h1>
-                                <img src={step6V2rayAndroid}/>
-
-                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>فعال شدن اشتراک </h2>
-
-                                <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                    در این قسمت مشاهده میکنید که آرچ نت برای شما اضافه شد و همانند تصویر باید کنار آن سبز شده باشد.
-                                </p>
-                            </a>
-
-                            <a
-                                className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
-                            >
-                                <h1 className="colorOfSteps">7</h1>
-                                <img src={step7V2rayAndroid}/>
-
-                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>بارگزاری سرور ها</h2>
-
-                                <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                    در این قسمت با استفاده از منوی سمت چپ به قسمت Configuration، صفحه اول برنامه وارد شوید و در همین صفحه بر روی سه نقطه بالای صفحه کلیک کنید.
+                                در آخر هم بر روی دکمه اتصال پایین بزنید و شما با موفقیت به سرویس های آرچ نت متصل شده اید    
                                 </p>
                             </a>
 
@@ -139,69 +105,7 @@ function V2rayForAndroid(){
                             <a
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
-                                <h1 className="colorOfSteps">8</h1>
-                                <img src={step8V2rayAndroid}/>
-
-                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}> فعال شدن سرور ها و آپدیت</h2>
-
-                                <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                    در این قسمت بر روی گزینه Update subscription کلیک کنید.
-                                </p>
-                            </a>
-
-                            <a
-                                className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
-                            >
-                                <h1 className="colorOfSteps">9</h1>
-                                <img src={step9V2rayAndroid}/>
-
-                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>تنظیمات بر روی سرور</h2>
-
-                                <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                    در این قسمت مجددا سه نقطه بالای صفحه را انتخاب کنید
-                                </p>
-                            </a>
-
-
-                            <a
-                                className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
-                            >
-                                <h1 className="colorOfSteps">10</h1>
-                                <img src={step10V2rayAndroid}/>
-
-                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>تنظیمات بیشتر سرور</h2>
-
-                                <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                    بر روی گزینه Real dealy all configuration کلیک کنید تا تنظیمات مورد نظر فعال شود.
-                                </p>
-                            </a>
-
-
-
-
-
-                           
-
-
-                            <a
-                                className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
-                            >
-                                <h1 className="colorOfSteps">12</h1>
-                                <img src={step13V2rayAndroid}/>
-
-                                <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>اتصال</h2>
-
-                                <p className="mt-1 text-sm text-gray-300" style={{direction: "rtl"}}>
-                                   جهت اتصال به برنامه بر روی دکمه سبز رنگ پایین صفحه کلیک کنید تا به آرچ نت متصل شوید. جهت تنظیمات بیشتر بر روی منو برنامه بالا سمت چپ کلیک کنید.
-                                </p>
-                            </a>
-
-
-
-                            <a
-                                className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
-                            >
-                                <h1 className="colorOfSteps">13</h1>
+                                <h1 className="colorOfSteps">1(دلخواه)</h1>
                                 <img src={step14V2rayAndroid}/>
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>تنظیمات بیشتر</h2>
@@ -216,7 +120,7 @@ function V2rayForAndroid(){
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                                 href="/services/digital-campaigns"
                             >
-                                <h1 className="colorOfSteps">14</h1>
+                                <h1 className="colorOfSteps">2</h1>
                                 <img src={step15V2rayAndroid}/>
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>تنظیمات</h2>
@@ -233,7 +137,7 @@ function V2rayForAndroid(){
                             <a
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
-                                <h1 className="colorOfSteps">15</h1>
+                                <h1 className="colorOfSteps">3</h1>
                                 <img src={step16V2rayAndroid}/>
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>تنظیمات</h2>
@@ -248,7 +152,7 @@ function V2rayForAndroid(){
                             <a
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
-                                <h1 className="colorOfSteps">16</h1>
+                                <h1 className="colorOfSteps">4</h1>
                                 <img src={step17V2rayAndroid}/>
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>تنظیمات بیشتر</h2>
@@ -262,7 +166,7 @@ function V2rayForAndroid(){
                             <a
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
-                                <h1 className="colorOfSteps">17</h1>
+                                <h1 className="colorOfSteps">5</h1>
                                 <img src={step18V2rayAndroid}/>
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>تنظیمات بیشتر</h2>
@@ -289,7 +193,7 @@ function V2rayForAndroid(){
                             <a
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
-                                <h1 className="colorOfSteps">18</h1>
+                                <h1 className="colorOfSteps">6</h1>
                                 <img src={step19V2rayAndroid}/>
 
                                 <h2 className="mt-4 text-xl font-bold purpleText" style={{direction: "rtl"}}>اتصال</h2>
