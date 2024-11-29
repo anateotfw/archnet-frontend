@@ -71,7 +71,7 @@ function Main(){
         <span 
           className="text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-purple-300 ease-linear transition hover:hue-rotate-[90deg] duration-300"
         >
-          آرچ نت
+        آرچ نت
         </span>
         اطلاعات شما، به شما تعلق دارد
       </span>

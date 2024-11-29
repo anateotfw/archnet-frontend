@@ -26,6 +26,7 @@
     "start": "react-scripts start",
     "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
     "serve": "serve -s build -l 3000",
+    "deploy": "npm run build && npm run serve",
     "build:analyze": "source-map-explorer 'build/static/js/*.js'",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

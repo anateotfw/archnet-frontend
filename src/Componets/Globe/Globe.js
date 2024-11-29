@@ -242,7 +242,7 @@ const Globe = () => {
       createOrbitControls();
       
       new THREE.TextureLoader().load(
-        '/earthmap.jpg',
+        '/earthmap-l.webp',
         (mapTex) => {
           earthTexture = mapTex;
           earthTexture.repeat.set(1, 1);
