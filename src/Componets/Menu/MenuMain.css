@@ -1,0 +1,46 @@
+.menu-item {
+    color: #111827;
+    transition: all 0.2s ease;
+}
+
+.menu-item:hover {
+    color: #9333ea;
+}
+
+.menu-item.active {
+    color: #9333ea;
+    font-weight: 600;
+}
+
+/* Remove default DaisyUI menu hover effects */
+.menu :where(li:not(.menu-title):not(:empty)) > :where(:not(ul).active),
+.menu :where(li:not(.menu-title):not(:empty)) > :where(*:not(ul):active) {
+    background-color: transparent;
+}
+
+.menu li > *:not(ul):not(.menu-title):not(details):active,
+.menu li > *:not(ul):not(.menu-title):not(details).active,
+.menu li > details > summary:active {
+    background-color: transparent;
+    color: #9333ea;
+}
+
+.menu li > *:not(ul):not(.menu-title):not(details):hover {
+    background-color: #f3e8ff;
+}
+
+.menu li > *:not(ul):not(.menu-title):not(details).active {
+    background-color: #f3e8ff;
+    color: #9333ea;
+}
+
+/* For mobile menu */
+.dropdown-content .menu li > *:not(ul):not(.menu-title):not(details):hover {
+    background-color: #f3e8ff;
+}
+
+.dropdown-content .menu li > *:not(ul):not(.menu-title):not(details).active {
+    background-color: #f3e8ff;
+    color: #9333ea;
+}
+

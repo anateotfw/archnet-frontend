@@ -1,7 +1,5 @@
-
 import { ReactDOM,React } from "react";
 import "./App.css";
-import Main from "./Componets/Main/Main";
 import { BrowserRouter,Route,Routes } from "react-router-dom";
 import MenuMain from "./Componets/Menu/MenuMain";
 import Subscription from "./Componets/otherPages/Sub/Subscription";
@@ -30,7 +28,7 @@ import ConnectToRobot from "./Componets/BasisTraining/ConnectToRobot";
 import TestSubscription from "./Componets/BasisTraining/TestSubscription";
 import FAQs from "./Componets/Apps/FAQs/FAQs";
 import NekoboxForAndroid from "./Componets/Apps/Android/NekoboxForAndroid";
-
+import Applications from "./Componets/Apps/Applications";
 import Tutorial from "./Componets/otherPages/Learn/Tutorial";
 import ShadowRocketMac from "./Componets/Apps/Mac/ShadowRocketMac";
 import HiddifyNextForMac from "./Componets/Apps/Mac/HiddifyNextForMac";
@@ -43,7 +41,7 @@ function App() {
     <ScrollFromTop>
 <Routes>
 <Route path="/" element={<MenuMain/>}>
-<Route index element={<Main/>}/>
+<Route index element={<Applications/>}/>
 <Route path="Tutorial" element={<Tutorial/>}/>
 <Route path="Subscription" element={<Subscription/>}/>
     <Route path="ClashForAndroid" element={<ClashForAndroid/>}/>

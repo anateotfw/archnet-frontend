@@ -1,11 +1,16 @@
 import "./../Main/Main.css";
+import "./MenuMain.css";
 import React from "react";
 import pic from "./../../images/pic.avif";
 import archImg from "./../../images/arch.webp";
-import { Outlet,Link } from "react-router-dom";
+import { Outlet, Link, useLocation } from "react-router-dom";
 import LogoNothing from "./../../images/Logo(Nothing) (1).png";
+import Footer from "../Footer/Footer";
 // import "./../Menu/MenuMain.css"
 function MenuMain(){
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+  
   const sixeOfarchImg = {
     width: "26px",
     height: "30px"
@@ -36,31 +41,23 @@ function MenuMain(){
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
           </div>
-          <ul tabIndex={0} className=" menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
-              <Link to="/"> <li><a className="purpleColorForMenuItems">خانه</a></li></Link>
-
-              <Link to="/Tutorial"><li><a>آموزش</a></li></Link>
-
-              <Link to="/Subscription"><li><a>اشتراک ها</a></li></Link>
-
-              <Link to="/BasicTraining"><li><a>آموزش های پایه</a></li></Link>
-
-              <Link to="/FAQs"><li><a>پرسش‌ های متداول</a></li></Link>
+          <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><Link to="/"><a className={location.pathname === "/" ? "active" : ""}>خانه</a></Link></li>
+              <li><Link to="/Tutorial"><a className={location.pathname === "/Tutorial" ? "active" : ""}>آموزش</a></Link></li>
+              <li><Link to="/Subscription"><a className={location.pathname === "/Subscription" ? "active" : ""}>اشتراک ها</a></Link></li>
+              <li><Link to="/BasicTraining"><a className={location.pathname === "/BasicTraining" ? "active" : ""}>آموزش های پایه</a></Link></li>
+              <li><Link to="/FAQs"><a className={location.pathname === "/FAQs" ? "active" : ""}>پرسش‌ های متداول</a></Link></li>
           </ul>
       </div>
 
   </div>
     <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-            <Link to="/"> <li><a className="purpleColorForMenuItems">خانه</a></li></Link>
-
-            <Link to="/Tutorial"><li><a>آموزش</a></li></Link>
-
-            <Link to="/Subscription"><li><a>اشتراک ها</a></li></Link>
-
-            <Link to="/BasicTraining"><li><a>آموزش های پایه</a></li></Link>
-
-            <Link to="/FAQs"><li><a>پرسش‌ های متداول</a></li></Link>
+            <li><Link to="/"><a className={location.pathname === "/" ? "active" : ""}>خانه</a></Link></li>
+            <li><Link to="/Tutorial"><a className={location.pathname === "/Tutorial" ? "active" : ""}>آموزش</a></Link></li>
+            <li><Link to="/Subscription"><a className={location.pathname === "/Subscription" ? "active" : ""}>اشتراک ها</a></Link></li>
+            <li><Link to="/BasicTraining"><a className={location.pathname === "/BasicTraining" ? "active" : ""}>آموزش های پایه</a></Link></li>
+            <li><Link to="/FAQs"><a className={location.pathname === "/FAQs" ? "active" : ""}>پرسش‌ های متداول</a></Link></li>
         </ul>
     </div>
   </div>
@@ -98,7 +95,11 @@ function MenuMain(){
 </div>
 </nav>
 
-<Outlet/>
+<main>
+  <Outlet />
+</main>
+
+<Footer />
 
         </>
     );
