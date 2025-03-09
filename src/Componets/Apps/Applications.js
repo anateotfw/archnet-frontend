@@ -366,7 +366,7 @@ function Applications() {
                                     <span className="exp-stat-label">پشتیبانی آنلاین</span>
                                 </div>
                                 <div className="exp-stat">
-                                    <span className="exp-stat-number">۲۰+</span>
+                                    <span className="exp-stat-number">۳۰+</span>
                                     <span className="exp-stat-label">کشور مختلف</span>
                                 </div>
                                 <div className="exp-stat">
