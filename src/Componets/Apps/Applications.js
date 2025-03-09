@@ -371,7 +371,7 @@ function Applications() {
                                 </div>
                                 <div className="exp-stat">
                                         <span className="exp-stat-number">۱۰K+</span>
-                                    <span className="exp-stat-label">کاربر فعال</span>
+                                    <span className="exp-stat-label">کاربر</span>
                                 </div>
                             </div>
                         </div>
