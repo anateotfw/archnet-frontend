@@ -15,7 +15,7 @@ import {
     faCheck
 } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-import Globe from '../Globe/Globe';
+// import Globe from '../Globe/Globe';
 
 function Applications() {
     const [platform, setPlatform] = useState('');
@@ -379,10 +379,10 @@ function Applications() {
                             <picture>
                                 <source 
                                     media="(min-width: 769px) and (max-width: 1024px)" 
-                                    srcSet="/static/media/Room - Relaxing - Copy@10-1440x708.jpg"
+                                    srcSet="/Romm-girl.webp"
                                 />
                                 <img 
-                                    src="/static/media/Room - Girl Working - Copy@10-1440x849.357db2150f1e78d57856.webp" 
+                                    src="/Romm-girl.webp" 
                                     alt="ArchNet Experience"
                                     className="responsive-image"
                                 />
