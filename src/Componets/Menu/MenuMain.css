@@ -44,3 +44,35 @@
     color: #9333ea;
 }
 
+/* Hamburger Menu Button Styles */
+.btn-ghost.lg\:hidden {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0.5rem;
+    color: #ffffff;
+}
+
+.btn-ghost.lg\:hidden:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.btn-ghost.lg\:hidden svg {
+    stroke: currentColor;
+    stroke-width: 2;
+}
+
+/* Dark pages */
+.dark-theme .btn-ghost.lg\:hidden {
+    background: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+}
+
+/* Light pages */
+.light-theme .btn-ghost.lg\:hidden {
+    background: rgba(255, 255, 255, 0.9);
+    color: #000000;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+

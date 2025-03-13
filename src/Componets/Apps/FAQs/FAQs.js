@@ -139,18 +139,18 @@ function FAQs() {
                                         <h2 className="faq-question">{faq.question}</h2>
                                         <div className="faq-icon">
                                             <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                                stroke="currentColor"
-                                            >
-                                                <path
+                               xmlns="http://www.w3.org/2000/svg"
+                               fill="none"
+                               viewBox="0 0 24 24"
+                               stroke="currentColor"
+                           >
+                               <path
                                                     strokeLinecap="round"
                                                     strokeLinejoin="round"
                                                     strokeWidth="2"
-                                                    d="M19 9l-7 7-7-7"
-                                                />
-                                            </svg>
+                                   d="M19 9l-7 7-7-7"
+                               />
+                           </svg>
                                         </div>
                                     </div>
                                     <div className="faq-answer-area">
@@ -163,18 +163,18 @@ function FAQs() {
                                         ) : (
                                             <p>{faq.answer}</p>
                                         )}
-                                    </div>
-                                </div>
+               </div>
+               </div>
                             ))}
                         </div>
-                    </div>
+                   </div>
                 </div>
                 
                 <div className="faq-blob blob-1"></div>
                 <div className="faq-blob blob-2"></div>
                 <div className="faq-blob blob-3"></div>
-            </div>
-        </section>
+               </div>
+           </section>
     );
 }
 

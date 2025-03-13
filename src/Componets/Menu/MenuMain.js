@@ -1,6 +1,6 @@
 import "./../Main/Main.css";
 import "./MenuMain.css";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import pic from "./../../images/pic.avif";
 import archImg from "./../../images/arch.webp";
 import { Outlet, Link, useLocation } from "react-router-dom";
@@ -11,6 +11,9 @@ function MenuMain(){
   const location = useLocation();
   const isHomePage = location.pathname === "/";
   
+  // Determine if the current page should use dark theme
+  const isDarkTheme = ["/", "/BasicTraining", "/FAQs"].includes(location.pathname);
+  
   const sixeOfarchImg = {
     width: "26px",
     height: "30px"
@@ -19,7 +22,7 @@ function MenuMain(){
 
         <>
         
-        <nav>
+        <nav className={isDarkTheme ? 'dark-theme' : 'light-theme'}>
           
 <div className="navbar bg-base-100" >
   <div className="navbar-start" >
