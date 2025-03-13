@@ -440,6 +440,21 @@ function Applications() {
                 </div>
             </section>
 
+            {/* Modern section divider */}
+            <div className="section-divider">
+                <div className="divider-content">
+                    <div className="divider-icon">
+                        <FontAwesomeIcon icon={faRocket} />
+                    </div>
+                    <div className="divider-glow"></div>
+                    <div className="divider-dots">
+                        <span className="divider-dot"></span>
+                        <span className="divider-dot"></span>
+                        <span className="divider-dot"></span>
+                    </div>
+                </div>
+            </div>
+
             {/* Experience Section */}
             <section className="experience-section">
                 <div className="container">
@@ -512,6 +527,21 @@ function Applications() {
                 </div>
             </section>
 
+            {/* Modern section divider */}
+            <div className="section-divider">
+                <div className="divider-content">
+                    <div className="divider-icon">
+                        <FontAwesomeIcon icon={faShieldHalved} />
+                    </div>
+                    <div className="divider-glow"></div>
+                    <div className="divider-dots">
+                        <span className="divider-dot"></span>
+                        <span className="divider-dot"></span>
+                        <span className="divider-dot"></span>
+                    </div>
+                </div>
+            </div>
+
             {/* Plans Section */}
             <section className="plans-section">
                 <div className="container">
@@ -560,6 +590,21 @@ function Applications() {
                     </div>
                 </div>
             </section>
+
+            {/* Modern section divider */}
+            <div className="section-divider">
+                <div className="divider-content">
+                    <div className="divider-icon">
+                        <FontAwesomeIcon icon={faDownload} />
+                    </div>
+                    <div className="divider-glow"></div>
+                    <div className="divider-dots">
+                        <span className="divider-dot"></span>
+                        <span className="divider-dot"></span>
+                        <span className="divider-dot"></span>
+                    </div>
+                </div>
+            </div>
 
             {/* Downloads Section */}
             <section id="downloads-section" className="downloads-section">
