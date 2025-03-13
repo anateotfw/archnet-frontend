@@ -12,7 +12,11 @@ function MenuMain(){
   const isHomePage = location.pathname === "/";
   
   // Determine if the current page should use dark theme
-  const isDarkTheme = ["/", "/BasicTraining", "/FAQs"].includes(location.pathname);
+  const isDarkTheme = ["/", "/BasicTraining", "/FAQs", 
+    "/ClashForAndroid", "/HiddifyForAndroid", "/NekoboxForAndroid", "/V2rayForAndroid",
+    "/ClashMetaForWindows", "/HiddifyForWindows", "/NekorayForWindows", "/V2rayForWindows",
+    "/ClashForLinux", "/NekorayForLinux"
+    ].includes(location.pathname);
   
   const sixeOfarchImg = {
     width: "26px",

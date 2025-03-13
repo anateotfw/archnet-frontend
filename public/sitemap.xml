@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://archnets.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://archnets.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://archnets.com/"/>
+  </url>
+  <url>
+    <loc>https://archnets.com/BasicTraining</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://archnets.com/BasicTraining"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://archnets.com/en/BasicTraining"/>
+  </url>
+  <url>
+    <loc>https://archnets.com/FAQs</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://archnets.com/FAQs"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://archnets.com/en/FAQs"/>
+  </url>
+</urlset> 

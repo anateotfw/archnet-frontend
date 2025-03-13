@@ -1,3 +1,13 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+Allow: /BasicTraining
+Allow: /FAQs
+Allow: /sitemap.xml
+
+# Prevent indexing of sensitive areas
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /api/
+
+Sitemap: https://archnets.com/sitemap.xml

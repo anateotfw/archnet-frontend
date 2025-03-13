@@ -1,6 +1,7 @@
 {
-  "short_name": "Arch Net",
-  "name": "آرچ نت | Arch Net",
+  "short_name": "Arch Net VPN",
+  "name": "آرچ نت | Arch Net VPN - Free & Premium VPN Service",
+  "description": "Fast, secure, and reliable VPN service with both free and premium plans. Access the internet freely with servers worldwide.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,16 +11,23 @@
     {
       "src": "logo.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
       "src": "logo512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#9333ea",
+  "background_color": "#ffffff",
+  "categories": ["utilities", "security", "networking"],
+  "lang": "fa-IR",
+  "dir": "rtl",
+  "orientation": "any",
+  "prefer_related_applications": false
 }
