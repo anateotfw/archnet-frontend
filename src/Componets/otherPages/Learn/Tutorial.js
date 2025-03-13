@@ -2,13 +2,10 @@ import "./Learning.css";
 import React, {useEffect} from "react";
 import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/all";
-import iran from "./../../../images/iran.jpg"
-import Background from "../../../images/iran.jpg";
 import linux from "./../../../images/icons8-linux-24 (1).png";
 import clashMeta from "./../../../images/clashMeta.webp";
 import hiddify from "./../../../images/hiddify.webp";
 import v2ray from "./../../../images/v2ray.webp";
-import matsuri from "./../../../images/matsuri.webp";
 import shadowrocket from "./../../../images/shadowrocket.webp";
 import v2box from "./../../../images/v2box.jpg";
 import foxray from "./../../../images/foxray.jpg";
@@ -18,16 +15,6 @@ import workSystem from "./../../../images/work.svg";
 import workSystem2 from "./../../../images/work2.svg";
 import workSystem3 from "./../../../images/work5.svg";
 import {Link} from "react-router-dom";
-import HiddifyForAndroid from "../../Apps/Android/HiddifyForAndroid";
-import V2rayForAndroid from "../../Apps/Android/V2rayForAndroid";
-import MatsuriForAndroid from "../../Apps/Android/NekoboxForAndroid";
-import ShadowForIos from "../../Apps/Ios/ShadowForIos";
-import FoxrayForIos from "../../Apps/Ios/FoxrayForIos";
-import V2boxForIos from "../../Apps/Ios/V2boxForIos";
-import V2rayForWindows from "../../Apps/Windows/V2rayForWindows";
-import ClashMetaForWindows from "../../Apps/Windows/ClashMetaForWindows";
-import ClashForMac from "../../Apps/Mac/ClashForMac";
-import NekorayForLinux from "../../Apps/Linux/NekorayForLinux";
 import streisand from "./../../../images/streisand2.webp";
 import Nekobox from "./../../../images/NekoboxAndroid.png";
 import ShadowRocketMac from "./../../../images/shadowRocketiconMac.png"
@@ -38,7 +25,7 @@ const Tutorial=()=>{
     useEffect(()=>
     {
         gsap.registerPlugin(ScrollTrigger);
-        gsap.to("prograss", {
+        gsap.to("progress", {
             value: 100,
             scrollTrigger: {
                 scrub: 0.5,
@@ -184,76 +171,64 @@ const Tutorial=()=>{
                                 </p>
                             </div>
 
-                            <div className="mt-8  grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 GridOrdFlex">
-
-
-
-
-                                <a
+                            <div
+                                className="mt-8 grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 GridOrdFlex"
+                            >
+                                <div
                                     className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                                 >
                                     <Link to="/ClashForAndroid">
-                                  <img src={clashMeta} className="sizeOfIcon" alt="clashMeta"/>
+                                        <img src={clashMeta} className="sizeOfIcon" alt="clashMeta"/>
 
-                                    <h2 className="mt-4 text-2xl font-bold text-white">ClashMeta</h2>
+                                        <h2 className="mt-4 text-2xl font-bold text-white">ClashMeta</h2>
 
-                                    <p className="mt-1 text-xl text-gray-300" style={{direction: "rtl"}}>
-                                        برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه ClashMeta روی این آموزش کلیک کنید.
-                                    </p>
+                                        <p className="mt-1 text-xl text-gray-300" style={{direction: "rtl"}}>
+                                            برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه ClashMeta روی این آموزش کلیک کنید.
+                                        </p>
                                     </Link>
-                                </a>
+                                </div>
 
-
-
-
-
-
-                                <a
+                                <div
                                     className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                                 >
                                     <Link to="/HiddifyForAndroid">
-                                   <img src={hiddify} className="sizeOfIcon" alt="hiddify"/>
+                                        <img src={hiddify} className="sizeOfIcon" alt="hiddify"/>
 
-                                    <h2 className="mt-4 text-2xl font-bold text-white">HiddifyNext</h2>
+                                        <h2 className="mt-4 text-2xl font-bold text-white">HiddifyNext</h2>
 
-                                    <p className="mt-1 text-xl text-gray-300" style={{direction: "rtl"}}>
-                                        برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه Hiddify روی این آموزش کلیک کنید.
-                                    </p>
+                                        <p className="mt-1 text-xl text-gray-300" style={{direction: "rtl"}}>
+                                            برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه Hiddify روی این آموزش کلیک کنید.
+                                        </p>
                                     </Link>
-                                </a>
+                                </div>
 
-
-
-
-
-
-                                <a
+                                <div
                                     className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                                 >
                                     <Link to="/V2rayForAndroid">
-                                    <img src={v2ray} className="sizeOfIcon" alt="v2ray"/>
+                                        <img src={v2ray} className="sizeOfIcon" alt="v2ray"/>
 
-                                    <h2 className="mt-4 text-2xl font-bold text-white">V2rayNG</h2>
+                                        <h2 className="mt-4 text-2xl font-bold text-white">V2rayNG</h2>
 
-                                    <p className="mt-1 text-xl text-gray-300" style={{direction: "rtl"}}>
-                                        برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه V2ray روی این آموزش کلیک کنید.
-                                    </p>
+                                        <p className="mt-1 text-xl text-gray-300" style={{direction: "rtl"}}>
+                                            برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه V2ray روی این آموزش کلیک کنید.
+                                        </p>
                                     </Link>
-                                </a>
+                                </div>
 
-                                <a
+                                <div
                                     className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                                 >
                                     <Link to="/NekoboxForAndroid">
-                                    <img src={Nekobox} className="sizeOfIcon" alt="matsuri"/>
+                                        <img src={Nekobox} className="sizeOfIcon" alt="matsuri"/>
 
-                                    <h2 className="mt-4 text-2xl font-bold text-white">Nekobox</h2>
+                                        <h2 className="mt-4 text-2xl font-bold text-white">Nekobox</h2>
 
-                                    <p className="mt-1 text-xl text-gray-300" style={{direction: "rtl"}}>
-                                        برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه Nekobox روی این آموزش کلیک کنید.
-                                    </p>
+                                        <p className="mt-1 text-xl text-gray-300" style={{direction: "rtl"}}>
+                                            برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه Nekobox روی این آموزش کلیک کنید.
+                                        </p>
                                     </Link>
-                                </a>
+                                </div>
                             </div>
 
 
@@ -278,78 +253,64 @@ const Tutorial=()=>{
                             </p>
                         </div>
 
-                        <div className="mt-8  grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 GridOrdFlex">
-
-
-
-
-                            <a
+                        <div className="mt-8 grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 GridOrdFlex">
+                            <div
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <Link to="/ShadowForIos">
-                                <img src={shadowrocket} className="sizeOfIcon" alt="shadowrocket"/>
+                                    <img src={shadowrocket} className="sizeOfIcon" alt="shadowrocket"/>
 
-                                <h2 className="mt-4 text-2xl font-bold text-black">Shadowrocket</h2>
+                                    <h2 className="mt-4 text-2xl font-bold text-black">Shadowrocket</h2>
 
-                                <p className="mt-1 text-xl text-black" style={{direction: "rtl"}}>
-                                    برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه Shadowrocket روی این آموزش کلیک کنید.
-                                </p>
+                                    <p className="mt-1 text-xl text-black" style={{direction: "rtl"}}>
+                                        برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه Shadowrocket روی این آموزش کلیک کنید.
+                                    </p>
                                 </Link>
-                            </a>
+                            </div>
 
-
-
-
-
-
-                            <a
+                            <div
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
-                              <Link to="/V2boxForIos">
-                                <img src={v2box} className="sizeOfIcon" alt="v2box"/>
+                                <Link to="/V2boxForIos">
+                                    <img src={v2box} className="sizeOfIcon" alt="v2box"/>
 
-                                <h2 className="mt-4 text-2xl font-bold text-black">V2box</h2>
+                                    <h2 className="mt-4 text-2xl font-bold text-black">V2box</h2>
 
-                                <p className="mt-1 text-xl text-black" style={{direction: "rtl"}}>
-                                    برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه V2box روی این آموزش کلیک کنید.
-                                </p>
-                              </Link>
-                            </a>
+                                    <p className="mt-1 text-xl text-black" style={{direction: "rtl"}}>
+                                        برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه V2box روی این آموزش کلیک کنید.
+                                    </p>
+                                </Link>
+                            </div>
 
-
-
-                            <a
+                            <div
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <Link to="/SingboxIOS">
-                                <img src={SingboxIOS} className="sizeOfIcon" alt="Singbox"/>
+                                    <img src={SingboxIOS} className="sizeOfIcon" alt="Singbox"/>
 
-                                <h2 className="mt-4 text-2xl font-bold text-black">Sing Box (پیشنهادی)</h2>
+                                    <h2 className="mt-4 text-2xl font-bold text-black">Sing Box (پیشنهادی)</h2>
 
-                                <p className="mt-1 text-xl text-black" style={{direction: "rtl"}}>
-                                    برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه SingBox روی این آموزش کلیک کنید.
-                                </p>
+                                    <p className="mt-1 text-xl text-black" style={{direction: "rtl"}}>
+                                        برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه SingBox روی این آموزش کلیک کنید.
+                                    </p>
                                 </Link>
-                            </a>            
+                            </div>            
 
-
-                            <a
+                            <div
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <Link to="/FoxrayForIos">
-                                <img src={foxray} className="sizeOfIcon" alt="foxray"/>
+                                    <img src={foxray} className="sizeOfIcon" alt="foxray"/>
 
-                                <h2 className="mt-4 text-2xl font-bold text-black">FoXray</h2>
+                                    <h2 className="mt-4 text-2xl font-bold text-black">FoXray</h2>
 
-                                <p className="mt-1 text-xl text-black" style={{direction: "rtl"}}>
-                                    برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه FoXray روی این آموزش کلیک کنید.
-                                </p>
+                                    <p className="mt-1 text-xl text-black" style={{direction: "rtl"}}>
+                                        برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه FoXray روی این آموزش کلیک کنید.
+                                    </p>
                                 </Link>
-                            </a>
+                            </div>
 
-
-
-                            <a
+                            <div
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <Link to="/StreisandForIos">
@@ -361,9 +322,7 @@ const Tutorial=()=>{
                                         برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه Streisand روی این آموزش کلیک کنید.
                                     </p>
                                 </Link>
-                            </a>
-
-
+                            </div>
                         </div>
 
 
@@ -387,76 +346,62 @@ const Tutorial=()=>{
                             </p>
                         </div>
 
-                        <div className="mt-8  grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 GridOrdFlex">
-
-
-
-
-                            <a
+                        <div className="mt-8 grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 GridOrdFlex">
+                            <div
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <Link to="/V2rayForWindows">
-                                <img src={v2ray} className="sizeOfIcon" alt="v2ray"/>
+                                    <img src={v2ray} className="sizeOfIcon" alt="v2ray"/>
 
-                                <h2 className="mt-4 text-2xl font-bold text-white">V2RayN</h2>
+                                    <h2 className="mt-4 text-2xl font-bold text-white">V2RayN</h2>
 
-                                <p className="mt-1 text-xl text-gray-300" style={{direction: "rtl"}}>
-                                    برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه V2ray روی این آموزش کلیک کنید.
-                                </p>
+                                    <p className="mt-1 text-xl text-gray-300" style={{direction: "rtl"}}>
+                                        برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه V2ray روی این آموزش کلیک کنید.
+                                    </p>
                                 </Link>
-                            </a>
+                            </div>
 
-
-
-
-
-
-                            <a
+                            <div
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <Link to="/ClashMetaForWindows">
-                                <img src={clashverge} className="sizeOfIcon" alt="clashMeta"/>
+                                    <img src={clashverge} className="sizeOfIcon" alt="clashMeta"/>
 
-                                <h2 className="mt-4 text-2xl font-bold text-white">clashVerge</h2>
+                                    <h2 className="mt-4 text-2xl font-bold text-white">clashVerge</h2>
 
-                                <p className="mt-1 text-xl text-gray-300" style={{direction: "rtl"}}>
-                                    برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه clashVerge روی این آموزش کلیک کنید.
-                                </p>
+                                    <p className="mt-1 text-xl text-gray-300" style={{direction: "rtl"}}>
+                                        برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه clashVerge روی این آموزش کلیک کنید.
+                                    </p>
                                 </Link>
-                            </a>
+                            </div>
 
-
-
-
-
-
-                            <a
+                            <div
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <Link to="/NekorayForWindows">
-                                <img src={Nekoray} className="sizeOfIcon" alt="Nekoray"/>
+                                    <img src={Nekoray} className="sizeOfIcon" alt="Nekoray"/>
 
-                                <h2 className="mt-4 text-2xl font-bold text-white">Nekoray</h2>
+                                    <h2 className="mt-4 text-2xl font-bold text-white">Nekoray</h2>
 
-                                <p className="mt-1 text-xl text-gray-300" style={{direction: "rtl"}}>
-                                    برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه Nekoray روی این آموزش کلیک کنید.
-                                </p>
+                                    <p className="mt-1 text-xl text-gray-300" style={{direction: "rtl"}}>
+                                        برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه Nekoray روی این آموزش کلیک کنید.
+                                    </p>
                                 </Link>
-                            </a>
+                            </div>
 
-                            <a
+                            <div
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <Link to="/HiddifyForWindows">
-                                <img src={hiddify} className="sizeOfIcon" alt="hiddify"/>
+                                    <img src={hiddify} className="sizeOfIcon" alt="hiddify"/>
 
-                                <h2 className="mt-4 text-2xl font-bold text-white">Hiddify Next</h2>
+                                    <h2 className="mt-4 text-2xl font-bold text-white">Hiddify Next</h2>
 
-                                <p className="mt-1 text-xl text-gray-300" style={{direction: "rtl"}}>
-                                    برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه Hiddify روی این آموزش کلیک کنید.
-                                </p>
+                                    <p className="mt-1 text-xl text-gray-300" style={{direction: "rtl"}}>
+                                        برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه Hiddify روی این آموزش کلیک کنید.
+                                    </p>
                                 </Link>
-                            </a>
+                            </div>
                         </div>
 
 
@@ -481,10 +426,8 @@ const Tutorial=()=>{
                             </p>
                         </div>
 
-                        <div className="mt-8  grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 GridOrdFlex">
-
-
-                            <a
+                        <div className="mt-8 grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 GridOrdFlex">
+                            <div
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <Link to="/StreisandForMac">
@@ -496,25 +439,23 @@ const Tutorial=()=>{
                                         برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه Streisand روی این آموزش کلیک کنید.
                                     </p>
                                 </Link>
-                            </a>
+                            </div>
 
-
-                            <a
+                            <div
                                 className="macApp block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <Link to="/V2boxForMac">
-                                <img src={v2box} className="sizeOfIcon" alt="v2box"/>
+                                    <img src={v2box} className="sizeOfIcon" alt="v2box"/>
 
-                                <h2 className="mt-4 text-2xl font-bold text-black">V2BOX</h2>
+                                    <h2 className="mt-4 text-2xl font-bold text-black">V2BOX</h2>
 
-                                <p className="mt-1 text-xl text-black" style={{direction: "rtl"}}>
-                                    برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه V2box روی این آموزش کلیک کنید.
-                                </p>
+                                    <p className="mt-1 text-xl text-black" style={{direction: "rtl"}}>
+                                        برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه V2box روی این آموزش کلیک کنید.
+                                    </p>
                                 </Link>
-                            </a>
+                            </div>
 
-
-                            <a
+                            <div
                                 className="macApp block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <Link to="/ShadowRocketMac">
@@ -526,11 +467,9 @@ const Tutorial=()=>{
                                         برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه ShadowRocket روی این آموزش کلیک کنید.
                                     </p>
                                 </Link>
-                            </a>
+                            </div>
 
-
-
-                            <a
+                            <div
                                 className="macApp block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <Link to="/HiddifyNextForMac">
@@ -542,11 +481,8 @@ const Tutorial=()=>{
                                         برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه Hiddify Next روی این آموزش کلیک کنید.
                                     </p>
                                 </Link>
-                            </a>
-
+                            </div>
                         </div>
-
-
                     </div>
                 </section>
             </section>
@@ -581,7 +517,7 @@ const Tutorial=()=>{
 
 
 
-                            <a
+                            <div
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <Link to="/ClashForLinux">
@@ -593,14 +529,14 @@ const Tutorial=()=>{
                                     برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه clashVerge روی این آموزش کلیک کنید.
                                 </p>
                                 </Link>
-                            </a>
+                            </div>
 
 
 
 
 
 
-                            <a
+                            <div
                                 className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-500/10 hover:shadow-purple-500/10"
                             >
                                 <Link to="/NekorayForLinux">
@@ -612,7 +548,7 @@ const Tutorial=()=>{
                                     برای مشاهده آموزش اتصال به سرویس آرچ نت با برنامه Nekoray روی این آموزش کلیک کنید.
                                 </p>
                                 </Link>
-                            </a>
+                            </div>
 
 
                         </div>

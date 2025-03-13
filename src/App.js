@@ -1,13 +1,11 @@
-import { ReactDOM,React } from "react";
+import { React } from "react";
 import "./App.css";
-import { BrowserRouter,Route,Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MenuMain from "./Componets/Menu/MenuMain";
 import Subscription from "./Componets/otherPages/Sub/Subscription";
-import Learning from "./Componets/otherPages/Learn/Tutorial";
 import ClashForAndroid from "./Componets/Apps/Android/ClashForAndroid";
 import HiddifyForAndroid from "./Componets/Apps/Android/HiddifyForAndroid";
 import V2rayForAndroid from "./Componets/Apps/Android/V2rayForAndroid";
-import MatsuriForAndroid from "./Componets/Apps/Android/NekoboxForAndroid";
 import ShadowForIos from "./Componets/Apps/Ios/ShadowForIos";
 import FoxrayForIos from "./Componets/Apps/Ios/FoxrayForIos";
 import V2boxForIos from "./Componets/Apps/Ios/V2boxForIos";
@@ -37,7 +35,7 @@ import SingboxIOS from "./Componets/Apps/Ios/SingBoxForIOS";
 function App() {
  return(
   <>
-<BrowserRouter>
+<BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
     <ScrollFromTop>
 <Routes>
 <Route path="/" element={<MenuMain/>}>

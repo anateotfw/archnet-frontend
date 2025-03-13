@@ -42,31 +42,30 @@ function MenuMain(){
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
           </div>
           <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><Link to="/"><a className={location.pathname === "/" ? "active" : ""}>خانه</a></Link></li>
-              <li><Link to="/Tutorial"><a className={location.pathname === "/Tutorial" ? "active" : ""}>آموزش</a></Link></li>
-              <li><Link to="/Subscription"><a className={location.pathname === "/Subscription" ? "active" : ""}>اشتراک ها</a></Link></li>
-              <li><Link to="/BasicTraining"><a className={location.pathname === "/BasicTraining" ? "active" : ""}>آموزش های پایه</a></Link></li>
-              <li><Link to="/FAQs"><a className={location.pathname === "/FAQs" ? "active" : ""}>پرسش‌ های متداول</a></Link></li>
+              <li><Link to="/" className={location.pathname === "/" ? "active" : ""}>خانه</Link></li>
+              <li><Link to="/Tutorial" className={location.pathname === "/Tutorial" ? "active" : ""}>آموزش</Link></li>
+              <li><Link to="/Subscription" className={location.pathname === "/Subscription" ? "active" : ""}>اشتراک ها</Link></li>
+              <li><Link to="/BasicTraining" className={location.pathname === "/BasicTraining" ? "active" : ""}>آموزش های پایه</Link></li>
+              <li><Link to="/FAQs" className={location.pathname === "/FAQs" ? "active" : ""}>پرسش‌ های متداول</Link></li>
           </ul>
       </div>
 
   </div>
     <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-            <li><Link to="/"><a className={location.pathname === "/" ? "active" : ""}>خانه</a></Link></li>
-            <li><Link to="/Tutorial"><a className={location.pathname === "/Tutorial" ? "active" : ""}>آموزش</a></Link></li>
-            <li><Link to="/Subscription"><a className={location.pathname === "/Subscription" ? "active" : ""}>اشتراک ها</a></Link></li>
-            <li><Link to="/BasicTraining"><a className={location.pathname === "/BasicTraining" ? "active" : ""}>آموزش های پایه</a></Link></li>
-            <li><Link to="/FAQs"><a className={location.pathname === "/FAQs" ? "active" : ""}>پرسش‌ های متداول</a></Link></li>
+            <li><Link to="/" className={location.pathname === "/" ? "active" : ""}>خانه</Link></li>
+            <li><Link to="/Tutorial" className={location.pathname === "/Tutorial" ? "active" : ""}>آموزش</Link></li>
+            <li><Link to="/Subscription" className={location.pathname === "/Subscription" ? "active" : ""}>اشتراک ها</Link></li>
+            <li><Link to="/BasicTraining" className={location.pathname === "/BasicTraining" ? "active" : ""}>آموزش های پایه</Link></li>
+            <li><Link to="/FAQs" className={location.pathname === "/FAQs" ? "active" : ""}>پرسش‌ های متداول</Link></li>
         </ul>
     </div>
   </div>
   <div className="navbar-center">
-   <Link to="/" ><a className="btn btnOfLog no-animation normal-case text-xl" >
+   <Link to="/" className="btn btnOfLog no-animation normal-case text-xl">
     <img src={LogoNothing} style={{width: "30px", height: "30px"}} alt="ArchNetLogo"/>
        <i className="font-black text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-purple-400 ease-linear transition hover:hue-rotate-[20deg] duration-300" style={{fontStyle: "normal"}}>rchNet</i>
-
-   </a></Link> 
+   </Link> 
   </div>
   <div className="navbar-end">
   <div className="flex-none">
@@ -87,8 +86,8 @@ function MenuMain(){
   Inbox
   <div className="badge badge-secondary">+99</div>
 </button> */}
-<button className="btn btn-sm logInBtn animitionOfBtn"><a href="https://hub.archnets.com/login"><span>ورود</span></a></button>
-<button className="btn btn-sm mx-3 signInBtn animitionOfBtn"><a href="https://hub.archnets.com/register"><span>ساخت حساب کاربری </span></a></button>
+<a href="https://hub.archnets.com/login" className="btn btn-sm logInBtn animitionOfBtn"><span>ورود</span></a>
+<a href="https://hub.archnets.com/register" className="btn btn-sm mx-3 signInBtn animitionOfBtn"><span>ساخت حساب کاربری </span></a>
     </div>
   </div>
   </div>

@@ -17,22 +17,99 @@ import {
 import { Link } from 'react-router-dom';
 // import Globe from '../Globe/Globe';
 
+// Helper function for safe property access
+function safeProp(obj, path, defaultValue = undefined) {
+    try {
+        if (!obj) return defaultValue;
+        
+        const parts = path.split('.');
+        let current = obj;
+        
+        for (const part of parts) {
+            if (current === null || current === undefined) {
+                return defaultValue;
+            }
+            current = current[part];
+        }
+        
+        return current === undefined ? defaultValue : current;
+    } catch (e) {
+        console.warn(`Error accessing ${path}:`, e);
+        return defaultValue;
+    }
+}
+
 function Applications() {
     const [platform, setPlatform] = useState('');
     const [androidArch, setAndroidArch] = useState('');
     const [activeTab, setActiveTab] = useState('free');
 
+    // Handle Chrome extensions that might be causing errors
     useEffect(() => {
+        // This fixes issues with extensions like MetaMask/Web3 providers
+        const fixExtensionIssues = () => {
+            if (typeof window !== 'undefined') {
+                // Monitor for extension errors and suppress them
+                const originalOnError = window.onerror;
+                window.onerror = function(message, source, lineno, colno, error) {
+                    // Check if error is from a Chrome extension
+                    if (source && source.includes('chrome-extension://')) {
+                        console.warn('Suppressed extension error:', message);
+                        return true; // Prevents the error from propagating
+                    }
+                    return originalOnError ? originalOnError(message, source, lineno, colno, error) : false;
+                };
+            }
+        };
+        
+        fixExtensionIssues();
+    }, []);
+
+    useEffect(() => {
+        // Enhanced Android architecture detection
+        const detectAndroidArchitecture = () => {
+            const userAgent = navigator.userAgent.toLowerCase();
+            
+            // Check if it's Android
+            if (!userAgent.includes('android')) {
+                return null;
+            }
+            
+            // Check for explicit architecture indicators
+            if (userAgent.includes('arm64') || userAgent.includes('aarch64')) {
+                return 'arm64-v8a';
+            }
+            
+            if (userAgent.includes('x86_64')) {
+                return 'x86_64';
+            }
+            
+            if (userAgent.includes('x86') && !userAgent.includes('x86_64')) {
+                return 'x86';
+            }
+            
+            if (userAgent.includes('armeabi-v7a') || userAgent.includes('armv7')) {
+                return 'armeabi-v7a';
+            }
+            
+            // For devices without explicit architecture indicators in user agent
+            // Check Android version as a hint - newer Android versions are more likely to be 64-bit
+            const androidVersionMatch = userAgent.match(/android\s([0-9\.]*)/);
+            const androidVersion = androidVersionMatch ? parseFloat(androidVersionMatch[1]) : 0;
+            
+            // Android 7.0+ devices are more likely to be 64-bit
+            if (androidVersion >= 7.0) {
+                return 'arm64-v8a'; // Best guess for newer devices
+            }
+            
+            // Default to ARM v7a as it's the most common for older devices
+            return 'armeabi-v7a';
+        };
+
         const userAgent = navigator.userAgent.toLowerCase();
         if (userAgent.includes('android')) {
             setPlatform('android');
-            if (userAgent.includes('arm64-v8a') || userAgent.includes('aarch64')) {
-                setAndroidArch('arm64-v8a');
-            } else if (userAgent.includes('armeabi-v7a') || userAgent.includes('armv7')) {
-                setAndroidArch('armeabi-v7a');
-            } else if (userAgent.includes('x86_64')) {
-                setAndroidArch('x86_64');
-            }
+            setAndroidArch(detectAndroidArchitecture() || 'armeabi-v7a');
         } else if (userAgent.includes('win')) {
             setPlatform('windows');
         } else if (userAgent.includes('mac')) {
@@ -210,46 +287,79 @@ function Applications() {
         },
         android: {
             name: 'اندروید',
+            icon: faAndroid,
+            // Universal download for fallback
+            universalFile: 'http://dl.download-bazi.ir/android/archnet-android-api28-armeabi-v7a.apk',
+            universalSize: '54.5 MB',
             files: {
-                'arm64-v8a': { file: 'https://dl.download-bazi.ir/android/archnet-android-latest-arm64-v8a.apk', size: '59.1 MB', label: 'ARM64' },
-                'armeabi-v7a': { file: 'https://dl.download-bazi.ir/android/archnet-android-apilatest-armeabi-v7a.apk', size: '54.5 MB', label: 'ARM32' },
-                'x86_64': { file: 'https://dl.download-bazi.ir/android/archnet-android-apilatest-x86_64.apk', size: '61.2 MB', label: 'x86_64' }
-            },
-            icon: faAndroid
+                'arm64-v8a': { 
+                    file: 'http://dl.download-bazi.ir/android/archnet-android-api28-arm64-v8a.apk', 
+                    size: '59.1 MB', 
+                    label: 'ARM64' 
+                },
+                'armeabi-v7a': { 
+                    file: 'http://dl.download-bazi.ir/android/archnet-android-api28-armeabi-v7a.apk', 
+                    size: '54.5 MB', 
+                    label: 'ARM32' 
+                },
+                'x86_64': { 
+                    file: 'http://dl.download-bazi.ir/android/archnet-android-api28-x86_64.apk', 
+                    size: '61.2 MB', 
+                    label: 'x86_64' 
+                }
+            }
         }
     };
 
     const getDownloadButton = () => {
-        // Only show download button for Android platform
-        if (platform === 'android' && androidArch) {
-            const downloadInfo = downloads.android.files[androidArch];
-            return (
-                <div className="download-buttons">
-                    <a href={downloadInfo.file} 
-                       className="download-button primary">
-                        <FontAwesomeIcon icon={downloads[platform].icon} className="button-icon" />
-                        <div className="button-content">
-                            <span className="button-label">دانلود برای {downloads[platform].name}</span>
-                            <span className="button-version">{downloadInfo.size}</span>
-                        </div>
-                        <FontAwesomeIcon icon={faDownload} className="download-icon" />
-                    </a>
-                    <a href="#downloads-section" className="download-button secondary">
-                        <span>سایر پلتفرم‌ها</span>
-                        <FontAwesomeIcon icon={faGlobe} />
-                    </a>
-                </div>
-            );
+        let downloadUrl, downloadSize, downloadArchLabel;
+        
+        try {
+            // Android-specific handling
+            if (platform === 'android') {
+                // Use safeProp to safely access potentially undefined properties
+                const downloadInfo = androidArch && safeProp(downloads, `android.files.${androidArch}`) 
+                    ? safeProp(downloads, `android.files.${androidArch}`)
+                    : { 
+                        file: safeProp(downloads, 'android.universalFile', '#'), 
+                        size: safeProp(downloads, 'android.universalSize', ''),
+                        label: 'Universal'
+                    };
+                      
+                downloadUrl = safeProp(downloadInfo, 'file', '#');
+                downloadSize = safeProp(downloadInfo, 'size', '');
+                downloadArchLabel = (androidArch && safeProp(downloads, `android.files.${androidArch}`)) 
+                    ? ` (${safeProp(downloads, `android.files.${androidArch}.label`, '')})` 
+                    : '';
+            } else if (platform === 'linux' && !safeProp(downloads, 'linux.inDevelopment', true)) {
+                // Linux handling
+                downloadUrl = safeProp(downloads, 'linux.file', '#');
+                downloadSize = safeProp(downloads, 'linux.size', '');
+            } else {
+                // Default to Android ARM64 for all other platforms
+                downloadUrl = safeProp(downloads, 'android.files.arm64-v8a.file', '#');
+                downloadSize = safeProp(downloads, 'android.files.arm64-v8a.size', '');
+            }
+        } catch (error) {
+            console.warn('Error in getDownloadButton:', error);
+            downloadUrl = '#';
+            downloadSize = '';
+            downloadArchLabel = '';
         }
-
-        // For non-Android platforms, show a generic button
+        
         return (
             <div className="download-buttons">
-                <a href="http://dl.download-bazi.ir/android/archnet-android-apilatest-arm64-v8a.apk" className="download-button primary">
-                    <FontAwesomeIcon icon={faAndroid} className="button-icon" />
+                <a href={downloadUrl || '#'} className="download-button primary">
+                    <FontAwesomeIcon 
+                        icon={safeProp(downloads, `${platform}.icon`, faAndroid)} 
+                        className="button-icon" 
+                    />
                     <div className="button-content">
-                        <span className="button-label">دانلود نسخه اندروید</span>
-                        <span className="button-version">نسخه جدید</span>
+                        <span className="button-label">
+                            دانلود برای {safeProp(downloads, `${platform}.name`, 'اندروید')}
+                            {downloadArchLabel || ''}
+                        </span>
+                        <span className="button-version">{downloadSize || ''}</span>
                     </div>
                     <FontAwesomeIcon icon={faDownload} className="download-icon" />
                 </a>
