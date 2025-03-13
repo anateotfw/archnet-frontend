@@ -14,7 +14,7 @@ import {
     faRocket,
     faCheck
 } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 // import Globe from '../Globe/Globe';
 
 // Helper function for safe property access
@@ -43,6 +43,10 @@ function Applications() {
     const [platform, setPlatform] = useState('');
     const [androidArch, setAndroidArch] = useState('');
     const [activeTab, setActiveTab] = useState('free');
+    const location = useLocation();
+    
+    // Determine theme based on current route
+    const isDarkTheme = ["/", "/BasicTraining", "/FAQs"].includes(location.pathname);
 
     // Handle Chrome extensions that might be causing errors
     useEffect(() => {
@@ -440,8 +444,8 @@ function Applications() {
                 </div>
             </section>
 
-            {/* Modern section divider */}
-            <div className="section-divider">
+            {/* Theme-aware section divider */}
+            <div className={`section-divider ${isDarkTheme ? 'dark-theme' : 'light-theme'}`}>
                 <div className="divider-content">
                     <div className="divider-icon">
                         <FontAwesomeIcon icon={faRocket} />
@@ -527,8 +531,8 @@ function Applications() {
                 </div>
             </section>
 
-            {/* Modern section divider */}
-            <div className="section-divider">
+            {/* Theme-aware section divider */}
+            <div className={`section-divider ${isDarkTheme ? 'dark-theme' : 'light-theme'}`}>
                 <div className="divider-content">
                     <div className="divider-icon">
                         <FontAwesomeIcon icon={faShieldHalved} />
@@ -591,8 +595,8 @@ function Applications() {
                 </div>
             </section>
 
-            {/* Modern section divider */}
-            <div className="section-divider">
+            {/* Theme-aware section divider */}
+            <div className={`section-divider ${isDarkTheme ? 'dark-theme' : 'light-theme'}`}>
                 <div className="divider-content">
                     <div className="divider-icon">
                         <FontAwesomeIcon icon={faDownload} />

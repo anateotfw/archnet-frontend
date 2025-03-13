@@ -76,3 +76,57 @@
     border-color: rgba(0, 0, 0, 0.1);
 }
 
+/* Desktop menu styles */
+.menu.menu-horizontal {
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+/* Dark theme styles */
+.dark-theme .menu.menu-horizontal li a {
+    color: #ffffff;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    padding: 0.5rem 1rem;
+}
+
+.dark-theme .menu.menu-horizontal li a:hover {
+    color: #9333ea;
+    background: transparent;
+}
+
+.dark-theme .menu.menu-horizontal li a.active {
+    color: #9333ea;
+    background: transparent;
+    font-weight: 600;
+}
+
+/* Light theme styles */
+.light-theme .menu.menu-horizontal li a {
+    color: #111827;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    padding: 0.5rem 1rem;
+}
+
+.light-theme .menu.menu-horizontal li a:hover {
+    color: #9333ea;
+    background: transparent;
+}
+
+.light-theme .menu.menu-horizontal li a.active {
+    color: #9333ea;
+    background: transparent;
+    font-weight: 600;
+}
+
+/* Keep existing mobile menu styles */
+.dropdown-content .menu li > *:not(ul):not(.menu-title):not(details):hover {
+    background-color: #f3e8ff;
+}
+
+.dropdown-content .menu li > *:not(ul):not(.menu-title):not(details).active {
+    background-color: #f3e8ff;
+    color: #9333ea;
+}
+
