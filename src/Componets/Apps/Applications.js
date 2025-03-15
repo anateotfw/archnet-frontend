@@ -293,21 +293,21 @@ function Applications() {
             name: 'اندروید',
             icon: faAndroid,
             // Universal download for fallback
-            universalFile: 'http://dl.download-bazi.ir/android/app-arm64-v8a-apilatest-release.apk',
+            universalFile: 'https://dl.download-bazi.ir/android/app-arm64-v8a-apilatest-release.apk',
             universalSize: '168.5 MB',
             files: {
                 'arm64-v8a': { 
-                    file: 'http://dl.download-bazi.ir/android/app-arm64-v8a-apilatest-release.apk', 
+                    file: 'https://dl.download-bazi.ir/android/app-arm64-v8a-apilatest-release.apk', 
                     size: '168.5 MB', 
                     label: 'ARM64' 
                 },
                 'armeabi-v7a': { 
-                    file: 'http://dl.download-bazi.ir/android/app-armeabi-v7a-apilatest-release.apk', 
+                    file: 'https://dl.download-bazi.ir/android/app-armeabi-v7a-apilatest-release.apk', 
                     size: '164.5 MB', 
                     label: 'ARM32' 
                 },
                 'x86_64': { 
-                    file: 'http://dl.download-bazi.ir/android/app-x86_64-apilatest-release.apk', 
+                    file: 'https://dl.download-bazi.ir/android/app-x86_64-apilatest-release.apk', 
                     size: '170.2 MB', 
                     label: 'x86_64' 
                 }
