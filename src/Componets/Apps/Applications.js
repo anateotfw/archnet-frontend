@@ -293,22 +293,22 @@ function Applications() {
             name: 'اندروید',
             icon: faAndroid,
             // Universal download for fallback
-            universalFile: 'http://dl.download-bazi.ir/android/archnet-android-api28-armeabi-v7a.apk',
-            universalSize: '54.5 MB',
+            universalFile: 'http://dl.download-bazi.ir/android/app-arm64-v8a-apilatest-release.apk',
+            universalSize: '168.5 MB',
             files: {
                 'arm64-v8a': { 
-                    file: 'http://dl.download-bazi.ir/android/archnet-android-api28-arm64-v8a.apk', 
-                    size: '59.1 MB', 
+                    file: 'http://dl.download-bazi.ir/android/app-arm64-v8a-apilatest-release.apk', 
+                    size: '168.5 MB', 
                     label: 'ARM64' 
                 },
                 'armeabi-v7a': { 
-                    file: 'http://dl.download-bazi.ir/android/archnet-android-api28-armeabi-v7a.apk', 
-                    size: '54.5 MB', 
+                    file: 'http://dl.download-bazi.ir/android/app-armeabi-v7a-apilatest-release.apk', 
+                    size: '164.5 MB', 
                     label: 'ARM32' 
                 },
                 'x86_64': { 
-                    file: 'http://dl.download-bazi.ir/android/archnet-android-api28-x86_64.apk', 
-                    size: '61.2 MB', 
+                    file: 'http://dl.download-bazi.ir/android/app-x86_64-apilatest-release.apk', 
+                    size: '170.2 MB', 
                     label: 'x86_64' 
                 }
             }
