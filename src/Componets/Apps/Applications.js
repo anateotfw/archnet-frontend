@@ -274,8 +274,9 @@ function Applications() {
         },
         linux: {
             name: 'لینوکس',
-            file: 'https://dl.download-bazi.ir/linux/archnet-linux.zip',
-            size: '23.3 MB',
+            inDevelopment: true,
+            // file: 'https://dl.download-bazi.ir/linux/archnet-linux.zip',
+            // size: '23.3 MB',
             icon: faLinux,
             label: 'AppImage'
         },
@@ -294,21 +295,21 @@ function Applications() {
             icon: faAndroid,
             // Universal download for fallback
             universalFile: 'https://dl.download-bazi.ir/android/app-arm64-v8a-apilatest-release.apk',
-            universalSize: '168.5 MB',
+            universalSize: '61.5 MB',
             files: {
                 'arm64-v8a': { 
                     file: 'https://dl.download-bazi.ir/android/app-arm64-v8a-apilatest-release.apk', 
-                    size: '168.5 MB', 
+                    size: '61.5 MB', 
                     label: 'ARM64' 
                 },
                 'armeabi-v7a': { 
                     file: 'https://dl.download-bazi.ir/android/app-armeabi-v7a-apilatest-release.apk', 
-                    size: '164.5 MB', 
+                    size: '58.5 MB', 
                     label: 'ARM32' 
                 },
                 'x86_64': { 
                     file: 'https://dl.download-bazi.ir/android/app-x86_64-apilatest-release.apk', 
-                    size: '170.2 MB', 
+                    size: '64.2 MB', 
                     label: 'x86_64' 
                 }
             }
