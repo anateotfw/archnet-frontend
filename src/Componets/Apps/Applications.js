@@ -294,62 +294,50 @@ function Applications() {
             name: 'اندروید',
             icon: faAndroid,
             // Universal download for fallback
-            universalFile: 'https://dl.download-bazi.ir/android/app-arm64-v8a-apilatest-release.apk',
-            universalSize: '61.5 MB',
+            universalFile: 'https://dl.download-bazi.ir/android/ArchNet-apilatest-universal-release-2.2.3+2.apk',
+            universalSize: '108.79 MB',
             files: {
                 'arm64-v8a': { 
-                    file: 'https://dl.download-bazi.ir/android/app-arm64-v8a-apilatest-release.apk', 
-                    size: '61.5 MB', 
+                    file: 'https://dl.download-bazi.ir/android/ArchNet-apilatest-arm64-v8a-release-2.2.3+2.apk', 
+                    size: '61.90 MB', 
                     label: 'ARM64' 
                 },
                 'armeabi-v7a': { 
-                    file: 'https://dl.download-bazi.ir/android/app-armeabi-v7a-apilatest-release.apk', 
-                    size: '58.5 MB', 
+                    file: 'https://dl.download-bazi.ir/android/ArchNet-apilatest-armeabi-v7a-release-2.2.3+2.apk', 
+                    size: '57.89 MB', 
                     label: 'ARM32' 
                 },
-                'x86_64': { 
-                    file: 'https://dl.download-bazi.ir/android/app-x86_64-apilatest-release.apk', 
-                    size: '64.2 MB', 
-                    label: 'x86_64' 
+                'universal': { 
+                    file: 'https://dl.download-bazi.ir/android/ArchNet-apilatest-universal-release-2.2.3+2.apk', 
+                    size: '108.79 MB', 
+                    label: 'Universal' 
                 }
             }
         }
     };
 
     const getDownloadButton = () => {
-        let downloadUrl, downloadSize, downloadArchLabel;
+        let downloadUrl, downloadSize;
         
         try {
             // Android-specific handling
             if (platform === 'android') {
-                // Use safeProp to safely access potentially undefined properties
-                const downloadInfo = androidArch && safeProp(downloads, `android.files.${androidArch}`) 
-                    ? safeProp(downloads, `android.files.${androidArch}`)
-                    : { 
-                        file: safeProp(downloads, 'android.universalFile', '#'), 
-                        size: safeProp(downloads, 'android.universalSize', ''),
-                        label: 'Universal'
-                    };
-                      
-                downloadUrl = safeProp(downloadInfo, 'file', '#');
-                downloadSize = safeProp(downloadInfo, 'size', '');
-                downloadArchLabel = (androidArch && safeProp(downloads, `android.files.${androidArch}`)) 
-                    ? ` (${safeProp(downloads, `android.files.${androidArch}.label`, '')})` 
-                    : '';
+                // Always use universal download for Android
+                downloadUrl = safeProp(downloads, 'android.files.universal.file', '#');
+                downloadSize = safeProp(downloads, 'android.files.universal.size', '');
             } else if (platform === 'linux' && !safeProp(downloads, 'linux.inDevelopment', true)) {
                 // Linux handling
                 downloadUrl = safeProp(downloads, 'linux.file', '#');
                 downloadSize = safeProp(downloads, 'linux.size', '');
             } else {
-                // Default to Android ARM64 for all other platforms
-                downloadUrl = safeProp(downloads, 'android.files.arm64-v8a.file', '#');
-                downloadSize = safeProp(downloads, 'android.files.arm64-v8a.size', '');
+                // Default to Android universal for all other platforms
+                downloadUrl = safeProp(downloads, 'android.files.universal.file', '#');
+                downloadSize = safeProp(downloads, 'android.files.universal.size', '');
             }
         } catch (error) {
             console.warn('Error in getDownloadButton:', error);
             downloadUrl = '#';
             downloadSize = '';
-            downloadArchLabel = '';
         }
         
         return (
@@ -362,7 +350,6 @@ function Applications() {
                     <div className="button-content">
                         <span className="button-label">
                             دانلود برای {safeProp(downloads, `${platform}.name`, 'اندروید')}
-                            {downloadArchLabel || ''}
                         </span>
                         <span className="button-version">{downloadSize || ''}</span>
                     </div>
