@@ -43,10 +43,184 @@ function Applications() {
     const [platform, setPlatform] = useState('');
     const [androidArch, setAndroidArch] = useState('');
     const [activeTab, setActiveTab] = useState('free');
+    const [apkMetadata, setApkMetadata] = useState(null);
+    const [isLoadingApkData, setIsLoadingApkData] = useState(true);
     const location = useLocation();
     
     // Determine theme based on current route
     const isDarkTheme = ["/", "/BasicTraining", "/FAQs"].includes(location.pathname);
+
+    // Fetch APK metadata from server
+    useEffect(() => {
+        const fetchApkMetadata = async () => {
+            try {
+                setIsLoadingApkData(true);
+                
+                // Determine API URL based on environment
+                // In development, we can use a CORS proxy if available
+                const isDevelopment = process.env.NODE_ENV === 'development';
+                let apiUrl = 'https://dl.download-bazi.ir/android/output-metadata.json';
+                
+                // Try direct fetch first - will work in production if CORS is configured on server
+                try {
+                    const response = await fetch(apiUrl, {
+                        method: 'GET',
+                        headers: {
+                            'Accept': 'application/json'
+                        },
+                        cache: 'no-cache'
+                    });
+                    
+                    if (response.ok) {
+                        const data = await response.json();
+                        console.log('Successfully fetched APK metadata');
+                        setApkMetadata(data);
+                        // Store in localStorage as cache
+                        localStorage.setItem('apkMetadataCache', JSON.stringify({
+                            timestamp: Date.now(),
+                            data: data
+                        }));
+                        setIsLoadingApkData(false);
+                        return;
+                    }
+                } catch (fetchError) {
+                    console.warn('Direct fetch failed:', fetchError);
+                }
+                
+                // If we're in development, try using a JSONP approach
+                if (isDevelopment) {
+                    try {
+                        console.log('Attempting alternative fetch method for development');
+                        // Create a script element to load the JSON as JSONP
+                        const script = document.createElement('script');
+                        const callbackName = `jsonpCallback_${Date.now()}`;
+                        
+                        // Define the callback function
+                        window[callbackName] = (data) => {
+                            if (data) {
+                                setApkMetadata(data);
+                                localStorage.setItem('apkMetadataCache', JSON.stringify({
+                                    timestamp: Date.now(),
+                                    data: data
+                                }));
+                                console.log('JSONP fetch successful');
+                                // Clean up
+                                document.body.removeChild(script);
+                                delete window[callbackName];
+                            }
+                            setIsLoadingApkData(false);
+                        };
+                        
+                        // This approach won't work for JSON files without server changes, but worth trying
+                        script.src = `${apiUrl}?callback=${callbackName}`;
+                        script.onerror = () => {
+                            console.warn('JSONP approach failed');
+                            document.body.removeChild(script);
+                            delete window[callbackName];
+                            
+                            // Fall back to cache or hardcoded data
+                            fallbackToCache();
+                        };
+                        
+                        document.body.appendChild(script);
+                        
+                        // Set a timeout in case the JSONP approach fails silently
+                        setTimeout(() => {
+                            if (window[callbackName]) {
+                                console.warn('JSONP request timed out');
+                                document.body.removeChild(script);
+                                delete window[callbackName];
+                                fallbackToCache();
+                            }
+                        }, 5000);
+                        
+                        return;
+                    } catch (jsonpError) {
+                        console.warn('JSONP approach failed:', jsonpError);
+                    }
+                }
+                
+                // Fallback function to check cache and use hardcoded data
+                fallbackToCache();
+                
+            } catch (error) {
+                console.error('Error in fetchApkMetadata:', error);
+                fallbackToCache();
+            }
+        };
+        
+        // Function to handle fallback to cache or hardcoded data
+        const fallbackToCache = () => {
+            // Check if we have cached data
+            const cachedData = localStorage.getItem('apkMetadataCache');
+            if (cachedData) {
+                try {
+                    const parsed = JSON.parse(cachedData);
+                    // Use cache if it's less than 24 hours old
+                    if (Date.now() - parsed.timestamp < 24 * 60 * 60 * 1000) {
+                        console.log('Using cached APK metadata');
+                        setApkMetadata(parsed.data);
+                        setIsLoadingApkData(false);
+                        return;
+                    }
+                } catch (cacheError) {
+                    console.warn('Error parsing cache:', cacheError);
+                }
+            }
+            
+            // As a last resort, use hardcoded metadata
+            console.log('Using hardcoded APK metadata');
+            setApkMetadata({
+                "version": 3,
+                "artifactType": {
+                    "type": "APK",
+                    "kind": "Directory"
+                },
+                "applicationId": "com.archnet.app",
+                "variantName": "apilatestRelease",
+                "elements": [
+                    {
+                        "type": "UNIVERSAL",
+                        "filters": [],
+                        "attributes": [],
+                        "versionCode": 2,
+                        "versionName": "2.2.4",
+                        "outputFile": "ArchNet-apilatest-universal-release-2.2.4.apk"
+                    },
+                    {
+                        "type": "ONE_OF_MANY",
+                        "filters": [
+                            {
+                                "filterType": "ABI",
+                                "value": "armeabi-v7a"
+                            }
+                        ],
+                        "attributes": [],
+                        "versionCode": 2,
+                        "versionName": "2.2.4",
+                        "outputFile": "ArchNet-apilatest-armeabi-v7a-release-2.2.4.apk"
+                    },
+                    {
+                        "type": "ONE_OF_MANY",
+                        "filters": [
+                            {
+                                "filterType": "ABI",
+                                "value": "arm64-v8a"
+                            }
+                        ],
+                        "attributes": [],
+                        "versionCode": 2,
+                        "versionName": "2.2.4",
+                        "outputFile": "ArchNet-apilatest-arm64-v8a-release-2.2.4.apk"
+                    }
+                ],
+                "elementType": "File"
+            });
+            setIsLoadingApkData(false);
+        };
+        
+        fetchApkMetadata();
+    }, []);
 
     // Handle Chrome extensions that might be causing errors
     useEffect(() => {
@@ -122,6 +296,117 @@ function Applications() {
             setPlatform('linux');
         }
     }, []);
+
+    // Process APK metadata to get file info
+    const getApkFiles = () => {
+        if (!apkMetadata || !apkMetadata.elements) {
+            return {
+                universal: { 
+                    file: 'https://dl.download-bazi.ir/android/ArchNet-apilatest-universal-release-2.2.3+2.apk', 
+                    size: '108.79 MB', 
+                    label: 'Universal',
+                    version: '2.2.3' 
+                },
+                'arm64-v8a': { 
+                    file: 'https://dl.download-bazi.ir/android/ArchNet-apilatest-arm64-v8a-release-2.2.3+2.apk', 
+                    size: '61.90 MB', 
+                    label: 'ARM64',
+                    version: '2.2.3' 
+                },
+                'armeabi-v7a': { 
+                    file: 'https://dl.download-bazi.ir/android/ArchNet-apilatest-armeabi-v7a-release-2.2.3+2.apk', 
+                    size: '57.89 MB', 
+                    label: 'ARM32',
+                    version: '2.2.3' 
+                }
+            };
+        }
+
+        try {
+            const result = {};
+            let universalElement, arm64Element, arm32Element;
+            
+            // Find each type of APK in the metadata
+            apkMetadata.elements.forEach(element => {
+                if (element.type === 'UNIVERSAL') {
+                    universalElement = element;
+                } else if (element.type === 'ONE_OF_MANY' && 
+                           element.filters && 
+                           element.filters.length > 0 && 
+                           element.filters[0].filterType === 'ABI') {
+                    if (element.filters[0].value === 'arm64-v8a') {
+                        arm64Element = element;
+                    } else if (element.filters[0].value === 'armeabi-v7a') {
+                        arm32Element = element;
+                    }
+                }
+            });
+            
+            // Static sizes - we could estimate based on past versions or fetch file sizes if needed
+            const sizeMap = {
+                'universal': '108 MB',
+                'arm64-v8a': '62 MB',
+                'armeabi-v7a': '58 MB'
+            };
+            
+            // Add universal APK
+            if (universalElement) {
+                const fileUrl = `https://dl.download-bazi.ir/android/${universalElement.outputFile}`;
+                result.universal = {
+                    file: fileUrl,
+                    size: sizeMap.universal,
+                    label: 'Universal',
+                    version: universalElement.versionName
+                };
+            }
+            
+            // Add ARM64 APK
+            if (arm64Element) {
+                const fileUrl = `https://dl.download-bazi.ir/android/${arm64Element.outputFile}`;
+                result['arm64-v8a'] = {
+                    file: fileUrl,
+                    size: sizeMap['arm64-v8a'],
+                    label: 'ARM64',
+                    version: arm64Element.versionName
+                };
+            }
+            
+            // Add ARM32 APK
+            if (arm32Element) {
+                const fileUrl = `https://dl.download-bazi.ir/android/${arm32Element.outputFile}`;
+                result['armeabi-v7a'] = {
+                    file: fileUrl,
+                    size: sizeMap['armeabi-v7a'],
+                    label: 'ARM32',
+                    version: arm32Element.versionName
+                };
+            }
+            
+            return result;
+        } catch (error) {
+            console.error('Error processing APK metadata:', error);
+            return {
+                universal: { 
+                    file: 'https://dl.download-bazi.ir/android/ArchNet-apilatest-universal-release-2.2.3+2.apk', 
+                    size: '108.79 MB', 
+                    label: 'Universal',
+                    version: '2.2.3' 
+                },
+                'arm64-v8a': { 
+                    file: 'https://dl.download-bazi.ir/android/ArchNet-apilatest-arm64-v8a-release-2.2.3+2.apk', 
+                    size: '61.90 MB', 
+                    label: 'ARM64',
+                    version: '2.2.3' 
+                },
+                'armeabi-v7a': { 
+                    file: 'https://dl.download-bazi.ir/android/ArchNet-apilatest-armeabi-v7a-release-2.2.3+2.apk', 
+                    size: '57.89 MB', 
+                    label: 'ARM32',
+                    version: '2.2.3' 
+                }
+            };
+        }
+    }
 
     const planCategories = {
         free: {
@@ -266,6 +551,8 @@ function Applications() {
         }
     ];
 
+    // Create downloads object with dynamic APK data
+    const androidFiles = getApkFiles();
     const downloads = {
         windows: {
             name: 'ویندوز',
@@ -294,30 +581,15 @@ function Applications() {
             name: 'اندروید',
             icon: faAndroid,
             // Universal download for fallback
-            universalFile: 'https://dl.download-bazi.ir/android/ArchNet-apilatest-universal-release-2.2.3+2.apk',
-            universalSize: '108.79 MB',
-            files: {
-                'arm64-v8a': { 
-                    file: 'https://dl.download-bazi.ir/android/ArchNet-apilatest-arm64-v8a-release-2.2.3+2.apk', 
-                    size: '61.90 MB', 
-                    label: 'ARM64' 
-                },
-                'armeabi-v7a': { 
-                    file: 'https://dl.download-bazi.ir/android/ArchNet-apilatest-armeabi-v7a-release-2.2.3+2.apk', 
-                    size: '57.89 MB', 
-                    label: 'ARM32' 
-                },
-                'universal': { 
-                    file: 'https://dl.download-bazi.ir/android/ArchNet-apilatest-universal-release-2.2.3+2.apk', 
-                    size: '108.79 MB', 
-                    label: 'Universal' 
-                }
-            }
+            universalFile: androidFiles.universal.file,
+            universalSize: androidFiles.universal.size,
+            version: androidFiles.universal.version,
+            files: androidFiles
         }
     };
 
     const getDownloadButton = () => {
-        let downloadUrl, downloadSize;
+        let downloadUrl, downloadSize, versionTag;
         
         try {
             // Android-specific handling
@@ -325,6 +597,7 @@ function Applications() {
                 // Always use universal download for Android
                 downloadUrl = safeProp(downloads, 'android.files.universal.file', '#');
                 downloadSize = safeProp(downloads, 'android.files.universal.size', '');
+                versionTag = safeProp(downloads, 'android.version', '');
             } else if (platform === 'linux' && !safeProp(downloads, 'linux.inDevelopment', true)) {
                 // Linux handling
                 downloadUrl = safeProp(downloads, 'linux.file', '#');
@@ -333,6 +606,7 @@ function Applications() {
                 // Default to Android universal for all other platforms
                 downloadUrl = safeProp(downloads, 'android.files.universal.file', '#');
                 downloadSize = safeProp(downloads, 'android.files.universal.size', '');
+                versionTag = safeProp(downloads, 'android.version', '');
             }
         } catch (error) {
             console.warn('Error in getDownloadButton:', error);
@@ -350,6 +624,7 @@ function Applications() {
                     <div className="button-content">
                         <span className="button-label">
                             دانلود برای {safeProp(downloads, `${platform}.name`, 'اندروید')}
+                            {versionTag ? ` (v${versionTag})` : ''}
                         </span>
                         <span className="button-version">{downloadSize || ''}</span>
                     </div>
